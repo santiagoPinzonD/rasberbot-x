@@ -1,0 +1,357 @@
+{
+  "2_ASSISTS_TRANSFER": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 7,
+    "confused_with": {
+      "3_FAQ_A": 4,
+      "3_TRANSFER_AUX": 3
+    }
+  },
+  "3_GETINFO_QUOTES": {
+    "precision": 0.3333333333333333,
+    "recall": 0.36363636363636365,
+    "f1-score": 0.34782608695652173,
+    "support": 11,
+    "confused_with": {
+      "3_FAQ_A": 3,
+      "DEFAULT_FALLBACK": 1
+    }
+  },
+  "1_WELCOME_WAIT": {
+    "precision": 0.6666666666666666,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.75,
+    "support": 7,
+    "confused_with": {
+      "3_CONFIRMATION_NO": 1
+    }
+  },
+  "DEFAULT_FALLBACK": {
+    "precision": 0.125,
+    "recall": 0.08695652173913043,
+    "f1-score": 0.10256410256410256,
+    "support": 23,
+    "confused_with": {
+      "3_CALLTRANSFER": 9,
+      "2_AGENTE_HUMANO": 4,
+      "3_CONFIRMATION_YES": 3
+    }
+  },
+  "6_CONFIRMATION_NO": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "2_CONFIRMATION_NO": 3,
+      "3_FAQ_A": 2,
+      "3_CONFIRMATION_NO": 1
+    }
+  },
+  "2_SINIESTROS_FALLBACK": {
+    "precision": 0.26666666666666666,
+    "recall": 0.2222222222222222,
+    "f1-score": 0.2424242424242424,
+    "support": 36,
+    "confused_with": {
+      "3_FAQ_A": 9,
+      "2_SINIESTRO_TRANSFER": 5
+    }
+  },
+  "4_CONFIRMATION_NO": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "3_FAQ_A": 2,
+      "6_CONFIRMATION_NO": 1,
+      "2_SINIESTROS_FALLBACK": 1
+    }
+  },
+  "1_HELLO_REPEAT": {
+    "precision": 0.5,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.6451612903225806,
+    "support": 33,
+    "confused_with": {
+      "3_FAQ_A": 2,
+      "2_FAQ_B": 1
+    }
+  },
+  "5_QUOTES_CONFIRMATIONYES_FALLBACK": {
+    "precision": 0.17391304347826086,
+    "recall": 0.22857142857142856,
+    "f1-score": 0.19753086419753085,
+    "support": 35,
+    "confused_with": {
+      "3_CALLTRANSFER": 9,
+      "2_FAQ_B": 5
+    }
+  },
+  "5_CERTIFICATION_CONFIRMATIONNO": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8,
+    "confused_with": {
+      "3_FAQ_A": 2,
+      "3_CONFIRMATION_NO": 1,
+      "6_CONFIRMATION_NO": 1
+    }
+  },
+  "2_AGENTE_HUMANO": {
+    "precision": 0.4752186588921283,
+    "recall": 0.7358916478555305,
+    "f1-score": 0.5775022143489814,
+    "support": 443,
+    "confused_with": {
+      "3_CALLTRANSFER": 102,
+      "3_CONFIRMATION_YES": 2
+    }
+  },
+  "3_TRANSFER_AUX": {
+    "precision": 0.7651991614255765,
+    "recall": 0.683947532792005,
+    "f1-score": 0.7222955145118735,
+    "support": 1601,
+    "confused_with": {
+      "3_FAQ_A": 235,
+      "2_FAQ_B": 96
+    }
+  },
+  "1_WELCOME_REPEAT": {
+    "precision": 0.23076923076923078,
+    "recall": 0.21428571428571427,
+    "f1-score": 0.22222222222222224,
+    "support": 14,
+    "confused_with": {
+      "3_FAQ_A": 2,
+      "4_CONFIRMATION_NO": 1
+    }
+  },
+  "5_CERTIFICATION_CONFIRMATIONYES": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "3_CONFIRMATION_YES": 2,
+      "3_FAQ_A": 1,
+      "3_TRANSFER_AUX": 1
+    }
+  },
+  "3_CONFIRMATION_YES": {
+    "precision": 0.1651376146788991,
+    "recall": 0.3103448275862069,
+    "f1-score": 0.2155688622754491,
+    "support": 58,
+    "confused_with": {
+      "3_FAQ_A": 13,
+      "4_CONFIRMATION_YES": 5
+    }
+  },
+  "2_QUOTES": {
+    "precision": 0.25925925925925924,
+    "recall": 0.4375,
+    "f1-score": 0.3255813953488372,
+    "support": 32,
+    "confused_with": {
+      "3_TRANSFER_AUX": 7,
+      "2_FAQ_B": 3
+    }
+  },
+  "3_GETINFOCAR_QUOTES": {
+    "precision": 0.21428571428571427,
+    "recall": 0.42857142857142855,
+    "f1-score": 0.2857142857142857,
+    "support": 14,
+    "confused_with": {
+      "2_QUOTES": 3,
+      "3_TRANSFER_AUX": 2
+    }
+  },
+  "5_CONFIRMATION_YES": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "3_CONFIRMATION_YES": 2,
+      "3_FAQ_A": 2,
+      "2_SINIESTROS_FALLBACK": 1
+    }
+  },
+  "2_CERTIFICATIONS": {
+    "precision": 0.4473684210526316,
+    "recall": 0.8095238095238095,
+    "f1-score": 0.576271186440678,
+    "support": 21,
+    "confused_with": {
+      "3_TRANSFER_AUX": 3,
+      "2_SINIESTRO_TRANSFER": 1
+    }
+  },
+  "2_FAQ_B": {
+    "precision": 0.14056224899598393,
+    "recall": 0.1794871794871795,
+    "f1-score": 0.15765765765765766,
+    "support": 195,
+    "confused_with": {
+      "3_FAQ_A": 56,
+      "3_TRANSFER_AUX": 43
+    }
+  },
+  "4_CONFIRMATION_YES_REPEAT": {
+    "precision": 0.22857142857142856,
+    "recall": 0.2857142857142857,
+    "f1-score": 0.25396825396825395,
+    "support": 28,
+    "confused_with": {
+      "3_FAQ_A": 7,
+      "3_TRANSFER_AUX": 4
+    }
+  },
+  "2_INFORMACION": {
+    "precision": 0.2608695652173913,
+    "recall": 0.75,
+    "f1-score": 0.3870967741935483,
+    "support": 16,
+    "confused_with": {
+      "3_TRANSFER_AUX": 2,
+      "3_FAQ_A": 1
+    }
+  },
+  "4_CONFIRMATION_YES": {
+    "precision": 0.1111111111111111,
+    "recall": 0.13333333333333333,
+    "f1-score": 0.1212121212121212,
+    "support": 15,
+    "confused_with": {
+      "3_CONFIRMATION_YES": 8,
+      "3_FAQ_A": 3
+    }
+  },
+  "3_FAQ_A": {
+    "precision": 0.45517241379310347,
+    "recall": 0.34196891191709844,
+    "f1-score": 0.3905325443786982,
+    "support": 965,
+    "confused_with": {
+      "3_TRANSFER_AUX": 242,
+      "2_FAQ_B": 79
+    }
+  },
+  "3_CONFIRMATION_NO": {
+    "precision": 0.11538461538461539,
+    "recall": 0.25,
+    "f1-score": 0.15789473684210525,
+    "support": 12,
+    "confused_with": {
+      "2_CONFIRMATION_NO": 3,
+      "2_SINIESTROS_FALLBACK": 2
+    }
+  },
+  "2_SINIESTROS": {
+    "precision": 0.05555555555555555,
+    "recall": 0.125,
+    "f1-score": 0.07692307692307691,
+    "support": 8,
+    "confused_with": {
+      "3_FAQ_A": 4,
+      "2_SINIESTRO_TRANSFER": 1
+    }
+  },
+  "3_GETINFO_CERTIFICATION_FALLBACK": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "3_CONFIRMATION_YES": 1,
+      "5_QUOTES_CONFIRMATIONYES_FALLBACK": 1,
+      "3_FAQ_A": 1
+    }
+  },
+  "2_SINIESTRO_TRANSFER": {
+    "precision": 0.578125,
+    "recall": 0.925,
+    "f1-score": 0.7115384615384616,
+    "support": 40,
+    "confused_with": {
+      "2_FAQ_B": 1,
+      "3_FAQ_A": 1
+    }
+  },
+  "3_CALLTRANSFER": {
+    "precision": 0.765625,
+    "recall": 0.6844700082169268,
+    "f1-score": 0.7227765726681128,
+    "support": 1217,
+    "confused_with": {
+      "2_AGENTE_HUMANO": 297,
+      "3_FAQ_A": 27
+    }
+  },
+  "4_ACCIDENT_FOLLOWUP": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1-score": 0.8333333333333333,
+    "support": 5,
+    "confused_with": {}
+  },
+  "2_CONFIRMATION_NO": {
+    "precision": 0.06666666666666667,
+    "recall": 0.16666666666666666,
+    "f1-score": 0.09523809523809522,
+    "support": 6,
+    "confused_with": {
+      "3_CONFIRMATION_NO": 2,
+      "5_CERTIFICATION_CONFIRMATIONNO": 1
+    }
+  },
+  "5_GET_REPORTINGTYPE": {
+    "precision": 0.5454545454545454,
+    "recall": 0.75,
+    "f1-score": 0.631578947368421,
+    "support": 8,
+    "confused_with": {
+      "3_CONFIRMATION_YES": 1,
+      "3_GETINFOCAR_QUOTES": 1
+    }
+  },
+  "2_CANCELACIONPOLIZA_TRANSFER": {
+    "precision": 0.4166666666666667,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.5555555555555556,
+    "support": 6,
+    "confused_with": {
+      "2_FAQ_B": 1
+    }
+  },
+  "3_FAQ_REPEAT": {
+    "precision": 0.2631578947368421,
+    "recall": 0.2631578947368421,
+    "f1-score": 0.2631578947368421,
+    "support": 19,
+    "confused_with": {
+      "3_FAQ_A": 7,
+      "4_CONFIRMATION_YES_REPEAT": 2
+    }
+  },
+  "accuracy": 0.5742211362248014,
+  "macro avg": {
+    "precision": 0.2747066528514115,
+    "recall": 0.3816416728359786,
+    "f1-score": 0.31085665567475257,
+    "support": 4911
+  },
+  "weighted avg": {
+    "precision": 0.6035323039189597,
+    "recall": 0.5742211362248014,
+    "f1-score": 0.5811798086217704,
+    "support": 4911
+  }
+}

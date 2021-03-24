@@ -1,0 +1,273 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- 3_TRANSFER_AUX
+- 2_FAQ_B
+- 2_CONFIRMATION_NO
+- 3_CONFIRMATION_YES
+- 3_FAQ_A
+- 4_CONFIRMATION_NO
+- 2_AGENTE_HUMANO
+- 5_CONFIRMATION_YES
+- 1_GOOD_BYE
+- 1_WELCOME
+- 1_HELLO_REPEAT
+- 1_WELCOME_REPEAT
+- 1_WELCOME_WAIT
+- 2_ASSISTS_TRANSFER
+- 2_ATENCION_CLIENTE
+- 2_CANCELACIONPOLIZA_TRANSFER
+- 2_CERTIFICATIONS
+- 2_CERTIFICATIONS_REPEAT
+- 2_INFORMACION
+- 2_QUOTES
+- 2_QUOTES_FALLBACK
+- 2_SINIESTRO_TRANSFER
+- 2_SINIESTROS
+- 2_SINIESTROS_FALLBACK
+- 3_AGGRIEVED_THIRD_PARTY
+- 3_CONFIRMATION_NO
+- 3_CALLTRANSFER
+- 3_FAQ_FALLBACK
+- 3_FAQ_REPEAT
+- 3_FAQ_WAIT
+- 3_GETANY_QUOTES
+- 3_GETINFO_CERTIFICATION_FALLBACK
+- 3_GETINFO_QUOTES
+- 3_GETINFO_QUOTES_FALLBACK
+- 3_GETINFOCAR_QUOTES
+- 3_AGGRIEVED_THIRD_PARTY_FALLBACK
+- 4_ACCIDENT_FOLLOWUP
+- 4_CONFIRMATION_YES
+- 4_CONFIRMATION_YES_REPEAT
+- 5_ANYQUOTES_CONFIRMATIONYES
+- 5_CERTIFICATION_CONFIRMATIONNO
+- 5_CERTIFICATION_CONFIRMATIONYES
+- 5_GET_REPORTINGTYPE
+- 5_QUOTES_CONFIRMATIONYES
+- 5_QUOTES_CONFIRMATIONYES_FALLBACK
+- 5_QUOTES_CONFIRMATIONYESYES_REPEAT
+- 5_QUOTESCAR_CONFIRMATIONYES
+- 6_CONFIRMATION_NO
+- 6_GET_THIRDPARTYNAME_ANY
+- 8_USERPHONE_CONFIRMATION_YES
+- 1_IM_A_BOT
+- DEFAULT_FALLBACK
+entities:
+- address
+- bank
+- cel_number
+- city
+- date
+- faq
+- model_car
+- name
+- pid
+- plate_car
+- service
+responses:
+  utter_1_WELCOME:
+  - text: Hola. Gracias por comunicarte. Soy un agente virtual, cuéntame ¿cómo puedo ayudarte?
+  utter_1_HELLO_REPEAT:
+  - text: Hola, soy una agente virtual, ¿me puedes indicar en qué te puedo ayudar?
+  utter_1_WELCOME_REPEAT:
+  - text: Soy una Agente Virtual, ¿me puedes indicar claramente en qué te puedo ayudar?
+  utter_1_WELCOME_WAIT:
+  - text: Está bien
+  utter_1_GOOD_BYE:
+  - text: Ha sido un gusto ayudarte.
+  utter_2_AGENTE_HUMANO:
+  - text: Por supuesto, por favor mencióname ¿para qué necesitas un agente?
+  utter_2_ASSISTS_TRANSFER:
+  - text: De acuerdo, para mejorar nuestro servicio, ¿me puedes indicar para qué necesitas una asistencia por favor?
+  utter_2_CANCELACIONPOLIZA_TRANSFER: # Usanding
+  - text: De acuerdo, voy a transferirte con un Agente para atender tu solicitud, por favor permanece en la línea
+  utter_2_CERTIFICATIONS:
+  - text: Muy bien, para brindarte una mejor asesoría con tu certificado, por favor indícame tu nombre
+  utter_2_CONFIRMATION_NO: # Usanding
+  - text: Muy bien, es un gusto haber sido de ayuda para ti. Que tengas un grandioso día, hasta pronto
+  utter_2_FAQ_B:
+  - text: Debes realizar la consulta de otra forma. Indica el tipo de reembolso que necesitas, siendo más específico en tu consulta, por ejemplo Cómo radico un reembolso por Consulta Externa ¿Con esto resolví tu inquietud?
+  utter_MEDIOS_DE_PAGO:
+  - text: Los Medios de Pago los encuentras en nuestra Página web. Ingresa en Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas y das Clic en Pagos en Línea ¿Con esto resolví tu inquietud?
+  utter_COPIA_POLIZA:
+  - text: Para solicitar una Copia de tú Póliza es necesario realizar una Petición en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas luego das Clic en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones ¿Con esto resolví tu inquietud?
+  utter_ACTUALIZA_DATOS:
+  - text: Puedes Actualizar tus Datos de Contacto ingresando a nuestra página web y realizando una petición. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas Atención al Cliente, Peticiones Quejas, Reclamos y felicitaciones y radica tu solicitud ¿Con esto resolví tu inquietud?
+  utter_DILIGENCIAR_FORM:
+  - text: Puedes diligenciar el Formulario que aparece en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. En el menú Personas luego das Clic en el sub menú Productos Para Ti. Allí encontrarás todos los Servicios que ofrecemos seleccionas tú preferencia y Diligencias tus Datos para brindarte una Asesoría personalizada ¿Con esto resolví tu inquietud?
+  utter_ENCONTRAR_DOCUMENTOS:
+  - text: Puedes encontrar los documentos necesarios en nuestra página web. Triple doble uu punto, RQT, punto com, punto co. En el menú Personas, seguido de Atención al Cliente das clic en Guía del Asegurado y finalmente en Check List Generales ¿Con esto resolví tu inquietud?
+  utter_QUEJAS_RECLAMOS:
+  - text: Puedes hacerlo en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas luego das Clic en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones ¿Con esto resolví tu inquietud?
+  utter_RECLAMACION_COMO_3ERO:
+  - text: Puedes iniciar el proceso de reclamación como Tercero Afectado por un asegurado de RQT Seguros. Consulta los documentos necesarios en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En el menú Personas, das clic en Atención al Cliente seguido de Guía del Asegurado, y finalmente en Check List Autos ¿Con esto resolví tu inquietud?
+  utter_2_INFORMACION:
+  - text: De acuerdo, indícame con más detalle qué información necesitas saber?
+  utter_2_QUOTES:
+  - text: Gracias por elegirnos. ¿Me puedes recordar el tipo de seguro que necesitas?
+  utter_2_QUOTES_FALLBACK:
+  - text: Discúlpame, ¿me puedes repetir el tipo de seguro que deseas?
+  utter_2_SINIESTRO_TRANSFER: # Usanding
+  - text: De acuerdo, voy a transferirte con un Agente para atender tu solicitud, por favor permanece en la línea
+  utter_2_SINIESTROS:
+  - text: 'Comprendo, por favor indícame: ¿tienes un seguro de RQT? ó ¿eres un tercero que ha tenido un siniestro con un asegurado de RQT?'
+  utter_2_SINIESTROS_FALLBACK:
+  - text: ¿Eres un asegurado de RQT? ó ¿eres un tercero que ha tenido un siniestro con un asegurado de RQT?
+  utter_3_AGGRIEVED_THIRD_PARTY:
+  - text: ¿Necesitas radicar el siniestro por primera vez? ó ¿necesitas conocer el seguimiento de tu caso?
+  utter_3_CONFIRMATION_NO:
+  - text: ¿Aún deseas comunicarte con un Agente Humano?
+  utter_3_CONFIRMATION_YES:
+  - text: De acuerdo, cuéntame qué inquietud tienes
+  utter_3_CALLTRANSFER:
+  - text: De acuerdo, voy a transferirte con un Agente para atender tu solicitud, por favor permanece en la línea
+  utter_3_FAQ_A:
+  - text: Cuándo el tiempo de reparación de tu vehículo es superior al estimado puedes hacer seguimiento del estado, a través de la página web. Ingresa en Triple doble uú punto, RQT, punto com, punto co. En la parte derecha encontrarás el botón de Reparación de Mi Vehículo. También puedes radicar una petición en el menú Personas luego das clic en Atención al Cliente y finalmente Peticiones Quejas o Reclamos ¿Con esto resolví tu inquietud?
+  utter_OTHER_REEMBOLSO:
+  - text: Debes realizar la consulta de otra forma. Indica el tipo de reembolso que necesitas, siendo más específico en tu consulta, por ejemplo Cómo radico un reembolso por Consulta Externa ¿Con esto resolví tu inquietud?
+  utter_ERROR_SERVICIO_TECNICO:
+  - text: En caso de presentar inconvenientes con el Servicio Técnico, puedes reportar tus observaciones por medio de una Petición en nuestra página Web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas luego en Atención al Cliente y finalmente en Peticiones Quejas, Reclamos y felicitaciones ¿Con esto resolví tu inquietud?
+  utter_ASIS_CAR_TALLER:
+  - text: La asistencia de autos Carro Taller de Emergencia, aplica dentro del perímetro urbano y en los municipios mencionados en el Clausulado de Asistencias. Puedes solicitar el servicio en caso de falta de gasolina, pinchazo, olvido de llaves dentro del vehículo y batería descargada. No incluye los costos de gasolina, despinchada de llanta, elaboración de llave o el cambio de la batería. Estos serán responsabilidad del propietario. Aplica de acuerdo a las Coberturas Específicas en el Contrato del Seguro ¿Con esto resolví tu inquietud?
+  utter_ASIS_VIAJE_SEGURO:
+  - text: La asistencia de Viaje Seguro, es un servicio que cubre el cambio del extintor y condicionamiento del botiquín del vehículo asegurado. Así podrás contar con un equipo de carretera en óptimas condiciones para tus viajes ¿Con esto resolví tu inquietud?
+  utter_COBERTURA_POLIZA:
+  - text: La cobertura de tu Póliza de Autos, incluye Asistencia Médica Internacional para el asegurado o sus beneficiarios en caso de accidente o enfermedad súbita. Puedes contar con la organización y pago de los Servicios Médicos, Gastos Hospitalarios, Intervenciones Quirúrgicas y productos Farmacéuticos. La Póliza, cubre máximo 12000 dolares por asegurado, gastos farmacéuticos No Hospitalarios hasta por 500 dolares, y Urgencias Odotológicas hasta por 500 dolares. Puedes consultar las condiciones generales de asistencia en nuestra página web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas, y clic en sub menú Productos Para Ti ¿Con esto resolví tu inquietud?
+  utter_COBERTURA_VEHICULO:
+  - text: La cobertura del servicio Vehículo de Reemplazo se hace efectiva cuándo el inconveniente es por Pérdida Total por Daños Pérdida Total por Hurto y Pérdida Parcial por Daños. En caso de Pérdida Parcial por Hurto, no tiene cobertura ¿Con esto resolví tu inquietud?
+  utter_AUTORIZAR_TERCERO:
+  - text: Puedes autorizar a otra persona para que recoja el vehículo de reemplazo. Por medio de una carta autenticada ante notaría con la autorización expresa de la persona que recogerá el vehículo. Esta persona deberá presentar su Documento de Identidad y Cédula del Asegurado ¿Con esto resolví tu inquietud?
+  utter_COBERTURA_ASISTENCIA:
+  - text: Puedes conocer la cobertura de Asistencia de Autos, Hogar y Copropiedades en nuestra página web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas y clic en Productos para Ti ¿Con esto resolví tu inquietud?
+  utter_ESTADO_SINIESTRO:
+  - text: Puedes consultar el estado de tu siniestro de autos en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En la parte derecha encontrarás el enlace llamado, Reparación de Mi Vehículo. Recuerda que debes tener a la mano el número de documento, número de siniestro y placa del vehículo ¿Con esto resolví tu inquietud?
+  utter_REQUISITOS_REEMBOLSO:
+  - text: Puedes consultar los Requisitos y Documentos para solicitar un Reembolso de Tú Póliza de Salud ó Vida en nuestra página web. Ingresa en triple doble uú punto, RQT, punto com, punto co En el menú Personas sección Atención al Cliente luego das Clic en Guía del Asegurado, y finalmente en Check List Vida ¿Con esto resolví tu inquietud?
+  utter_DILIGENCIAR_FORMULARIO:
+  - text: Puedes diligenciar el Formulario que aparece en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. En el menú Personas luego das Clic en el sub menú Productos Para Ti. Allí encontrarás todos los Servicios que ofrecemos seleccionas tú preferencia y Diligencias tus Datos para brindarte una Asesoría personalizada ¿Con esto resolví tu inquietud?
+  utter_DOCUMENTOS_NECESARIOS:
+  - text: Puedes encontrar los documentos necesarios en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En el menú Personas, seguido de Atención al Cliente das clic en Guía del Asegurado y finalmente en Check List Generales ¿Con esto resolví tu inquietud?
+  utter_WEB_PAGE:
+  - text: Puedes hacerlo en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas luego das Clic en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones ¿Con esto resolví tu inquietud?
+  utter_RECLAMACION_3ERO:
+  - text: Puedes iniciar el proceso de reclamación como Tercero Afectado por un asegurado de RQT Seguros. Consulta los documentos necesarios en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En el menú Personas, das clic en Atención al Cliente seguido de Guía del Asegurado, y finalmente en Check List Autos ¿Con esto resolví tu inquietud?
+  utter_AMPLIACION_SINIESTRO:
+  - text: Puedes realizar la ampliación de tu siniestro enviando un correo electrónico Á Soporte punto, Reclamos punto, Autos, Arroba, RQT, punto com, punto co. Indicando el detalle de Tiempo, Modo y Lugar del siniestro para dar continuidad al proceso de atención de tu reclamación ¿Con esto resolví tu inquietud?
+  utter_REEMBOLSO_ASISTENCIA_CAR:
+  - text: Puedes solicitar el Reembolso por Asistencia de Autos Únicamente con previa notificación y de acuerdo obtenido con RQT. Es necesario realizar la Notificación con Anticipación a la intervención de cualquier profesional que cubra Tus Necesidades de Asistencia. Con la autorización en mano es indispensable enviar un correo a Servicio Al Cliente, Arroba, RQT, punto com, punto co. Es indispensable Adjuntar el RUT Fotocopia del Documento de Identidad una copia de la Factura que soporta el pago del Servicio Prestado y el formato del SARALFT diligenciado completamente. El Formato lo encuentras en nuestra Página Web. En el menú de Personas das Clic en el sub menú Servicios y posteriormente en Formatos ¿Con esto resolví tu inquietud?
+  utter_PERDIDA_LLAVES:
+  - text: Puedes solicitar la asistencia en caso de Pérdida de Llaves del vehículo asegurado por una sola vez durante la vigencia de la póliza y hasta por el valor de Un Salario Mínimo Mensual Legal Vigente ¿Con esto resolví tu inquietud?
+  utter_EXTRACTO_DE_PAGO:
+  - text: Puedes solicitar un Extracto de Pago, por medio de una petición en nuestra página Web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas luego en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones y Radica tu Solicitud ¿Con esto resolví tu inquietud?
+  utter_PAZ_Y_SALVO:
+  - text: Puedes solicitar un Paz y Salvo del pago de Tú Póliza por medio de una petición en nuestra Página Web. Ingresa en Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas luego das Clic en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones ¿Con esto resolví tu inquietud?
+  utter_ASISTENCIA_ABOGADO:
+  - text: El Abogado puede ayudarte durante la asistencia de autos en Caso de Accidente de Transito. Te apoyará de manera telefónica y presencial en caso de choque Simple con Lesionados u Homicidio. El abogado te asistirá según se requiera en la elaboración del Informe del Accidente, la Audiencia de Conciliación, el Trámite ante Medicina Legal, la liberación del Conductor y entrega provisional del vehículo ¿Con esto resolví tu inquietud?
+  utter_NO_HUBO_RESPUESTA:
+  - text: Disculpa no te puedo brindar una respuesta, para mejorar nuestro servicio, me puedes recordar el motivo de tu llamada por favor?
+  utter_PREGUNTA_ESPECIFICA:
+  - text: Disculpa, ¿podrías realizar tu pregunta de forma más específica? ó ¿prefieres comunicarte con un agente humano
+  utter_DESCUENTO_AUTOMATICO:
+  - text: Hemos dispuesto otorgarte un descuento automático en la próxima renovación de tu póliza Pyme siempre y cuando seas un Restaurante, Hotel, Gimnasio, Centro comercial, Estación de servicio, Colegio, Institución educativa, Iglesia, Club social o club deportivo. Esta medida será aplicada únicamente sobre la prima correspondiente a la cobertura de responsabilidad civil Extracontractual Este descuento equivale al 19 punto 7% de la prima de riesgo anual de la cobertura de responsabilidad civil extracontractual, contemplando el periodo de aislamiento preventivo desde marzo 25 hasta el 30 de junio, sin incluir asistencias, gastos de emisión o intereses. Recuerda que debes estar al día en los pagos para la aplicación de esta medida ¿Con esto resolví tu inquietud?
+  utter_VEHICULO_REEMPLAZO:
+  - text: Puedes adquirir como vehículo de reemplazo, un Renaúlt Logánd Dynamikq, modelo 2015 o posterior ¿Con esto resolví tu inquietud?
+  utter_CANCELAR_CONDUCTOR_ELEGIDO:
+  - text: Puedes cancelar el servicio de Conductor Elegido comunicándote vía telefónica. Recuerda hacerlo al menos 2 horas antes de la prestación del servicio. Sí cumples con este requisito puedes escoger la opción de Comunicarte con un Asesor ¿Con esto resolví tu inquietud?
+  utter_COBERTURA_PRODUCTOS:
+  - text: Puedes conocer la Cobertura de nuestros productos ingresando en nuestra Página Web. Vas al Menú Personas, das Clic en el sub menú Productos Para Ti ó Productos Para Tú Empresa. Allí encontrarás el detalle de todos Nuestros Seguros ¿Con esto resolví tu inquietud?
+  utter_DESCARGAR_RECIBO:
+  - text: Puedes descargar tú Recibo de Pago en nuestra página web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En la parte inferior izquierda de la página encontrarás el Enlace para Recibir el Extracto Digital. Así apoyarás al planeta recibiendo un correo electrónico ¿Con esto resolví tu inquietud?
+  utter_VISITAR_OFICINAS:
+  - text: Puedes visitar Todas Nuestras Oficinas en las principales ciudades del País. Consulta en nuestra página web, ingresa a Triple doble uú punto, RQT, punto com, punto co. Al lado derecho en el recuadro Red De Oficinas ¿Con esto resolví tu inquietud?
+  utter_DESCUENTO_POLIZA:
+  - text: Si tienes una póliza de autos, se te ha otorgado un Descuento en la próxima renovación de tu vehículo asegurado, equivalente al 30% de la prima de riesgo, correspondiente a los meses de Abril y Mayo de 2020. Sin incluir asistencias o gastos de emisión y será directamente aplicado a tu próxima Renovación Recuerda que si tu póliza de autos es una póliza colectiva, debes comunicarte directamente con tu Tomador, Si tu vehículo está en la categoría de pesados y quieres acogerte al Beneficio otorgado para estos Automotores, es necesario que envíes tu solicitud al buzón, beneficios pesados arroba RQT, punto com, punto co, el área encargada revisará tu caso ¿Con esto resolví tu inquietud?
+  utter_3_FAQ_FALLBACK:
+  - text: Disculpa, no comprendí bien tu intención, puedes mencionar Si quieres realizar una Pregunta o hablar con un Agente?
+  utter_3_FAQ_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Cuándo el tiempo de reparación de tu vehículo es superior al estimado puedes hacer seguimiento del estado, a través de la página web. Ingresa en Triple doble uú punto, RQT, punto com, punto co. En la parte derecha encontrarás el botón de Reparación de Mi Vehículo. También puedes radicar una petición en el menú Personas luego das clic en Atención al Cliente y finalmente Peticiones Quejas o Reclamos> ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_CONDUCTOR_ELEGIDO:
+  - text: El servicio de Conductor Elegido cubre hasta 30 kilómetros a la redonda del casco urbano en la ciudad dónde se solicita el servicio. Puedes disponer de un Conductor máximo por hora y media para realizar un único trayecto así que debes especificar el lugar donde serás recogido y tu lugar de destino ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_CONDUCTOR_ELEGIDO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo El servicio de Conductor Elegido cubre hasta 30 kilómetros a la redonda del casco urbano en la ciudad dónde se solicita el servicio. Puedes disponer de un Conductor máximo por hora y media para realizar un único trayecto así que debes especificar el lugar donde serás recogido y tu lugar de destino ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_MEDIOS_DE_PAGO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Los Medios de Pago los encuentras en nuestra Página web. Ingresa en Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas y das Clic en Pagos en Línea ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_PETICION_COPY_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Para solicitar una Copia de tú Póliza es necesario realizar una Petición en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. Vas al menú Personas luego das Clic en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_ACTUALIZAR_DATOS_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes Actualizar tus Datos de Contacto ingresando a nuestra página web y realizando una petición. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas Atención al Cliente, Peticiones Quejas, Reclamos y felicitaciones y radica tu solicitud ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_ESTADO_SINIESTRO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes consultar el estado de tu siniestro de autos en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En la parte derecha encontrarás el enlace llamado, Reparación de Mi Vehículo. Recuerda que debes tener a la mano el número de documento, número de siniestro y placa del vehículo ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_DOCUMENTOS_NECESARIOS_REPEAT:
+  - text: 'Esta bien, te lo diré de nuevo Puedes encontrar los documentos necesarios en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En el menú Personas, seguido de Atención al Cliente das clic en Guía del Asegurado y finalmente en Check List Generales ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano? '
+  utter_RECLAMACION_AFECTADO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes iniciar el proceso de reclamación como Tercero Afectado por un asegurado de RQT Seguros. Consulta los documentos necesarios en nuestra página web. Triple doble uú punto, RQT, punto com, punto co. En el menú Personas, das clic en Atención al Cliente seguido de Guía del Asegurado, y finalmente en Check List Autos ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_RECLAMOS_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes realizar un arreglo directo enviando un correo electrónico Á Soporte punto Reclamos punto Autos, Arroba RQT, punto com, punto co. Ingresas la justificación y soportes. Así el Área de Indemnizaciones revisará tu solicitud ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_EXTRACTO_PAGO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes solicitar un Extracto de Pago, por medio de una petición en nuestra página Web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En el menú Personas luego en Atención al Cliente y a media página das Clic en Peticiones Quejas Reclamos y Felicitaciones y Radica tu Solicitud ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_SOLICITAR_CERTIFICADO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Sí eres Intermediario o Proveedor de RQT Seguros. Puedes solicitar el Certificado en nuestra página web. Ingresa a Triple doble uú punto, RQT, punto com, punto co. En el campo de Personas en la Sección Servicios y Certificados. Sí eres Intermediario puedes enviar una Petición de Soporte al correo. Canales, Arroba, RQT, punto com, punto co ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_DESCARGAR_RECIBO_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes descargar tú Recibo de Pago en nuestra página web. Ingresa en triple doble uú punto, RQT, punto com, punto co. En la parte inferior izquierda de la página encontrarás el Enlace para Recibir el Extracto Digital. Así apoyarás al planeta recibiendo un correo electrónico ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_LLANTA_PINCHADA_REPEAT:
+  - text: Esta bien, te lo diré de nuevo Puedes solicitar tu servicio de Asistencia por Llanta Pinchada, para que un técnico realice el cambio de llanta. Ten en cuenta que el servicio cubre hasta el perímetro urbano, y en los municipios mencionados en el Clausulado de Asistencias. También puedes escoger la opción de comunicarte con un asesor ¿Con esto resolví tu inquietud o quieres esperar para pasarte con un agente humano?
+  utter_3_FAQ_WAIT:
+  - text: Está bien.
+  utter_3_GETANY_QUOTES:
+  - text: Muy bien, para brindarte una mejor asesoría, por favor indícame tu nombre
+  utter_3_GETINFO_QUOTES:
+  - text: Muy bien, para brindarte una mejor asesoría, por favor indícame tu nombre
+  utter_3_GETINFOCAR_QUOTES: # Usanding
+  - text: Muy bien, para brindarte una mejor asesoría, por favor indícame tu nombre
+  utter_3_TRANSFER_AUX:
+  - text: Te estoy transfiriendo, un momento por favor
+  utter_3_AGGRIEVED_THIRD_PARTY_FALLBACK:
+  - text: quieres radicar el siniestro por primera vez? o necesitas hacer seguimiento de tu caso?
+  utter_4_ACCIDENT_FOLLOWUP:
+  - text: De acuerdo, Voy a transferirte con un Agente para atender tu Solicitud, por favor permanece en la línea
+  utter_4_CONFIRMATION_NO:
+  - text: Aún deseas comunicarte con un Agente Humano?
+  utter_4_CONFIRMATION_YES:
+  - text: De acuerdo, Cuéntame qué otra inquietud tienes
+  utter_4_CONFIRMATION_YES_REPEAT:
+  - text: Me puedes indicar por favor  el motivo de tu llamada, Cuéntame en qué te puedo ayudar?
+  utter_5_CERTIFICATION_CONFIRMATIONNO:
+  - text: De acuerdo, por favor indícame de nuevo tu número de teléfono También puedes ingresarlo por el teclado
+  utter_5_CERTIFICATION_CONFIRMATIONYES: # Usanding
+  - text: Súper bien Te he enviado un mensaje con un enlace para completar tu solicitud Cuéntame Sí necesitas asistencia con otro tema?
+  utter_5_CONFIRMATION_YES:
+  - text: De acuerdo a tu solicitud te transferiré en un momento. Espera en la línea por favor
+  utter_5_GET_REPORTINGTYPE: # Usanding
+  - text: Muy bien, para gestionar tu solicitud y estudiar tu caso, por favor indícame tu nombre
+  utter_5_QUOTES_CONFIRMATIONYES_FALLBACK:
+  - text: Te puedo ayudar con algo más?
+  utter_5_QUOTES_CONFIRMATIONYESYES_REPEAT:
+  - text: Te he enviado un enlace para que completes el registro de tu solicitud [300] Cuéntame Sí necesitas asistencia con otro tema?
+  utter_5_QUOTESCAR_CONFIRMATIONYES:
+  - text: Súper bien, Te he enviado un enlace para completar el registro de tu solicitud. Cuéntame Sí necesitas asistencia con otro tema?
+  utter_6_CONFIRMATION_NO:
+  - text: Muy bien, es un gusto haber sido de ayuda para ti. Que tengas un grandioso día, Hasta pronto
+  utter_6_GET_THIRDPARTYNAME_ANY:
+  - text: Gracias, encantados de poder ayudarte, por favor me confirmas cuál es tu número de teléfono?
+  utter_1_IM_A_BOT:
+  - text: Soy Lili, una asistente virtual. Te puedo apoyar en lo que necesites. Cuéntame ¿cómo puedo ayudarte?
+  utter_DEFAULT_FALLBACK:
+  - text: Ups, no he entendido a que te refieres.
+actions:
+- utter_2_AGENTE_HUMANO
+- utter_2_CANCELACIONPOLIZA_TRANSFER
+- utter_2_SINIESTROS
+- utter_3_CALLTRANSFER
+- utter_3_CONFIRMATION_NO
+- utter_4_CONFIRMATION_YES
+- utter_5_CONFIRMATION_YES
+- utter_6_CONFIRMATION_NO
+- utter_CONDUCTOR_ELEGIDO
+- utter_COPIA_POLIZA
+- utter_ERROR_SERVICIO_TECNICO
+- utter_MEDIOS_DE_PAGO
+- utter_PREGUNTA_ESPECIFICA
+- utter_QUEJAS_RECLAMOS

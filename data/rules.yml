@@ -1,0 +1,22 @@
+version: "2.0"
+rules:
+
+- rule: Dice `adios` cada vez que el usuario envíe un mensaje con la intención de `1_GOOD_BYE`
+  steps:
+  - intent: 1_GOOD_BYE
+  - action: utter_1_GOOD_BYE
+  
+- rule: Responde saludo
+  steps:
+  - intent: 1_HELLO_REPEAT
+  - action: utter_1_HELLO_REPEAT
+  
+- rule: Responde si le preguntan si es un bot
+  steps:
+  - intent: 1_IM_A_BOT
+  - action: utter_1_IM_A_BOT
+
+- rule: Responde para especificar información
+  steps:
+  - intent: 2_INFORMACION
+  - action: utter_2_INFORMACION

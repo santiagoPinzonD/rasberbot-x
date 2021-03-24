@@ -1,0 +1,304 @@
+version: "2.0" 
+
+stories:
+
+- story: Cancelar conductor elegido | Sin agente humano
+  steps:
+  - intent: 3_TRANSFER_AUX
+    entities:
+      - faq: cancelar
+      - service: conductor elegido
+  - action: utter_CANCELAR_CONDUCTOR_ELEGIDO
+  - intent: 3_CONFIRMATION_YES
+  - action: utter_4_CONFIRMATION_YES
+  - intent: 6_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Cancelar conductor elegido | Con agente humano | Corregido
+  steps:
+  - intent: 3_TRANSFER_AUX
+    entities:
+      - faq: cancelar
+      - service: conductor elegido
+  - action: utter_CANCELAR_CONDUCTOR_ELEGIDO
+  - or:
+    - intent: 2_AGENTE_HUMANO
+    - intent: 3_CALLTRANSFER
+  - action: utter_3_CALLTRANSFER
+
+- story: Traspasar
+  steps:
+  - intent: 2_FAQ_B
+    entities:
+    - faq: traspasar
+  - action: utter_3_CALLTRANSFER
+
+- story: Conductor elegido | resolvió
+  steps:
+  - intent: 3_FAQ_A
+    entities:
+    - service: conductor elegido
+  - action: utter_CONDUCTOR_ELEGIDO
+  - intent: 3_CONFIRMATION_YES
+  - action: utter_4_CONFIRMATION_YES
+  - intent: 2_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Conductor elegido | no resolvió
+  steps:
+  - intent: 3_FAQ_A
+    entities:
+    - service: conductor elegido
+  - action: utter_CONDUCTOR_ELEGIDO
+  - or:
+    - intent: 3_CONFIRMATION_NO
+    - intent: 2_AGENTE_HUMANO
+  - action: utter_3_CALLTRANSFER
+
+- story: Certificaciones | Resolvió 
+  steps:
+  - intent: 2_CERTIFICATIONS
+  - action: utter_2_CERTIFICATIONS
+  - intent: 3_FAQ_A
+    entities:
+    - name
+  - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+  - intent: 6_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Certificaciones | No resolvió 
+  steps:
+  - intent: 2_CERTIFICATIONS
+  - action: utter_2_CERTIFICATIONS
+  - intent: 3_FAQ_A
+  - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+  - intent: 3_CONFIRMATION_NO
+  - action: utter_3_CALLTRANSFER
+
+- story: Cancelación Poliza 
+  steps:
+  - intent: 2_CANCELACIONPOLIZA_TRANSFER
+    entities:
+    - faq: cancelar
+  - action: utter_2_CANCELACIONPOLIZA_TRANSFER
+
+#! Comentada por conflicto con otras dos historias - NO FUE IDEA DE JULIÁN
+# Corregido - Se borró la entidad con la mayúscula inicial por ahora.
+# - story: Vigencia de la póliza | Resolvió duda
+#   steps:
+#   - intent: 3_TRANSFER_AUX
+#     entities:
+#     - faq: vigencia
+#   - action: utter_COPIA_POLIZA
+#   - intent: 3_CONFIRMATION_YES
+#   - action: utter_2_CONFIRMATION_NO
+
+#! Comentada por ahora por conflicto con otras historias
+# Corregido - Se borró la entidad con la mayúscula inicial por ahora.
+# - story: Vigencia de la póliza | No resolvió duda
+#   steps:
+#   - intent: 3_TRANSFER_AUX
+#     entities:
+#     - faq: vigencia
+#   - action: utter_COPIA_POLIZA
+#   - or:
+#     - intent: 2_AGENTE_HUMANO
+#     - intent: 3_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER
+
+#! Comentada ya que los nombres no generan suficiente confianza
+#? Se deja sólo una intención por ahora porque estaba generando conflicto con otra historia
+# Corregido - Se borraron ejemplos de dos intenciones, se que quitó una entidad
+# - story: Reportar siniestro | Sin agente humano
+#   steps:
+#   # - or:
+#   #   - intent: 3_TRANSFER_AUX
+#   #     entities:
+#   #     - faq: reportar
+#   #   - intent: 3_FAQ_A
+#   #     entities:
+#   #     - faq: reportar
+#   - intent: 3_FAQ_A
+#     entities:
+#     - faq: reportar
+#   - action: utter_2_SINIESTROS
+#   - intent: 3_CONFIRMATION_YES
+#   - action: utter_5_GET_REPORTINGTYPE
+#   - intent: 3_FAQ_A
+#   - action: utter_6_GET_THIRDPARTYNAME_ANY
+#   - intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+#! Comentada por ahora por conflicto con otras historias
+# TODO: Verificar cuando se le pase un nombre porque no tenía confianza suficiente
+# Caso - No está funcionando con 3_TRANSFER_AUX (se va a utter_MEDIOS_DE_PAGO). Con 3_FAQ_A sí estaba funcionando
+# - story: Reportar siniestro | Con agente humano 
+#   steps:
+#   - or:
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - faq: reportar
+#     - intent: 3_FAQ_A
+#       entities:
+#       - faq: reportar
+#   - action: utter_2_SINIESTROS
+#   - intent: 3_CONFIRMATION_YES
+#   - action: utter_5_GET_REPORTINGTYPE
+#   - intent: 3_FAQ_A
+#   - action: utter_6_GET_THIRDPARTYNAME_ANY
+#   - intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - intent: 2_AGENTE_HUMANO
+#   - action: utter_2_AGENTE_HUMANO
+#   - intent: 2_FAQ_B
+#   - action: utter_2_SINIESTRO_TRANSFER
+
+#! Comentado porque nos quedó grande hacer la predicción correcta
+# TODO: Terminar la historia porque queda en pregunta
+# Corregido - agregamos más entidades y corregimos la respuesta de daba
+# - story: Reportar robo
+#   steps:
+#   - intent: 3_TRANSFER_AUX
+#     entities:
+#     - or:
+#       - faq: robaron
+#       - faq: robo
+#       - faq: hurto
+#   - action: utter_2_SINIESTROS
+
+#! Comentadas por conflicto y porque son las que usan utter_MEDIOS_DE_PAGO y por posible confusión porque no todos los `pago` servían
+# Corregido - No tenía el or en las intenciones y se agregaron ejemplos de entidades
+# - story: Pago de seguro | Resolvió
+#   steps:
+#   - or:
+#     - intent: 2_FAQ_B
+#       entities:
+#       - faq: pago
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - faq: pago
+#   - action: utter_MEDIOS_DE_PAGO
+#   - intent: 3_CONFIRMATION_YES
+#   - action: utter_4_CONFIRMATION_YES
+#   - intent: 2_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# Corregido - No tenía el or en las intenciones y se agregaron ejemplos de entidades
+# - story: Pago de seguro | No resolvió
+#   steps:
+#   - or:
+#     - intent: 2_FAQ_B
+#       entities:
+#       - faq: pago
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - faq: pago
+#   - action: utter_MEDIOS_DE_PAGO
+#   - intent: 2_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER
+
+#! Comentado por ahora para ver si así no se confunde cuando hagamos la historia de `Cancelar póliza`
+# Corregida - Se borró una intención y se enriqueció la intención para que haya menos lugar a confusión
+# - story: Renovación Poliza | Todo sale bien, y no quiere agente humano 
+#   steps:
+#   - or:
+#     - intent: 2_QUOTES
+#       entities:
+#       - or:
+#         - faq: renovar
+#         - faq: renovación
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - or:
+#         - faq: renovar
+#         - faq: renovación
+#   - action: utter_2_QUOTES
+#   - intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+#! Comentado por ahora para ver si así no se confunde cuando hagamos la historia de `Cancelar póliza`
+# Corregida - Se borró una intención y se enriqueció la intención para que haya menos lugar a confusión
+# - story: Renovación Poliza | Quiere agente humano 
+#   steps:
+#   - or:
+#     - intent: 2_QUOTES
+#       entities:
+#       - or:
+#         - faq: renovar
+#         - faq: renovación
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - or:
+#         - faq: renovar
+#         - faq: renovación
+#   - action: utter_2_QUOTES
+#   - intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - intent: 2_AGENTE_HUMANO
+#   - action: utter_2_AGENTE_HUMANO
+#   - or:
+#     - intent: 2_FAQ_B
+#     - intent: 2_QUOTES
+#   - action: utter_3_CALLTRANSFER
+
+#! Comentado por ahora para ver si así no se confunde cuando hagamos la historia de `Cancelar póliza`
+
+#! Creo que en ciertas entradas va a tomar 2_QUOTES a pesar de no estar directamente la entidad
+#! Para probar esto, se le pasaría un ejemplo de 2_QUOTES sólo reemplazando la entidad de renovar a cotizar
+# Corregida - Se agregó un or para incluir las entidades de 2_QUOTES y 3_TRANSFER_AUX
+
+# - story: Cotizar póliza | Sin agente humano
+#   steps:
+#   - or:
+#     - intent: 2_FAQ_B
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#     - intent: 2_QUOTES
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#   - action: utter_DILIGENCIAR_FORM
+#   - intent: 3_CONFIRMATION_YES
+#   - action: utter_4_CONFIRMATION_YES
+#   - intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+#! Comentado por ahora para ver si así no se confunde cuando hagamos la historia de `Cancelar póliza`
+# Corregida - Se agregó un or para incluir las entidades de 2_QUOTES y 3_TRANSFER_AUX
+# - story: Cotizar póliza | Con agente humano
+#   steps:
+#   - or:
+#     - intent: 2_FAQ_B
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#     - intent: 3_TRANSFER_AUX
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#     - intent: 2_QUOTES
+#       entities:
+#       - or:
+#         - faq: cotizar
+#         - faq: cotización
+#   - action: utter_DILIGENCIAR_FORM
+#   - intent: 3_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER

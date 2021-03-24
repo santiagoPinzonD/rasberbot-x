@@ -1,0 +1,2145 @@
+[
+  {
+    "text": "Buenos d\u00edas, se\u00f1orita, Mira es para preguntar c\u00f3mo radic\u00f3 unos papeles para el seguro de vida, es que pueden incapacidad del 31 de octubre al 21 de noviembre y me dijeron que me comunicara con este n\u00famero de",
+    "entities": [
+      {
+        "start": 125,
+        "end": 138,
+        "value": "31 de octubre",
+        "entity": "date"
+      },
+      {
+        "start": 142,
+        "end": 157,
+        "value": "21 de noviembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 142,
+        "end": 157,
+        "confidence_entity": 0.738434910774231,
+        "value": "21 de noviembre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hola buenas tardes se mueve en Colombia somos una empresa que ofrecemos soluciones de tecnolog\u00eda como controles de acceso sistemas de registro de visitantes para edificios corporativos",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "bank",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.8894878029823303,
+        "value": "Colombia",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "solicitar correo electr\u00f3nico de J",
+    "entities": [
+      {
+        "start": 32,
+        "end": 33,
+        "value": "J",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Valente Man",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.8010172247886658,
+        "value": "Valente",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "El\u00edas Calles",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "El\u00edas Calles",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "enumera 515 apertura el 24 26",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 27,
+        "end": 29,
+        "confidence_entity": 0.14581505954265594,
+        "value": "26",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "modelos",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "model_car",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7877435088157654,
+        "value": "modelos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "no me olvido Luis Miguel",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 18,
+        "end": 24,
+        "confidence_entity": 0.9385349154472351,
+        "value": "Miguel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "para para llevar el Carlos por la condici\u00f3n Pero entonces para es para",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.9876865744590759,
+        "value": "Carlos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Quiero pagar a trav\u00e9s del Banco de Bogot\u00e1 o de tarjeta de cr\u00e9dito.",
+    "entities": [
+      {
+        "start": 26,
+        "end": 41,
+        "value": "Banco de Bogot\u00e1",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 35,
+        "end": 41,
+        "confidence_entity": 0.9973553419113159,
+        "value": "Bogot\u00e1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ricardo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Ricardo",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "si me sirve el Renault 2015",
+    "entities": [
+      {
+        "start": 15,
+        "end": 27,
+        "value": "Renault 2015",
+        "entity": "model_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 23,
+        "end": 27,
+        "confidence_entity": 0.20057958364486694,
+        "value": "2015",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Necesito asistencias para una para una audiencia El lunes.",
+    "entities": [
+      {
+        "start": 52,
+        "end": 57,
+        "value": "lunes",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "necesito comunicarme con \u00e1ngel mamani",
+    "entities": [
+      {
+        "start": 25,
+        "end": 30,
+        "value": "\u00e1ngel",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "para comunicarme con el se\u00f1or Mario Alberto Alfonso",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.5524068474769592,
+        "value": "Alberto",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para explicarle el proceso de da\u00f1os y lesiones a terceros.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 36,
+        "end": 37,
+        "confidence_entity": 0.8731979727745056,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para llegar como de proceso de un cambio de llaves.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 44,
+        "end": 50,
+        "confidence_entity": 0.23592157661914825,
+        "value": "llaves",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para una informaci\u00f3n de un seguro que debe haber sido ya cancelado al banco finandina, mami por la accidente acci\u00f3n de un auto que yo adquirir en finandina.",
+    "entities": [
+      {
+        "start": 76,
+        "end": 85,
+        "value": "finandina",
+        "entity": "name"
+      },
+      {
+        "start": 146,
+        "end": 155,
+        "value": "finandina",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "no, no sale Banco de Bogot\u00e1",
+    "entities": [
+      {
+        "start": 12,
+        "end": 27,
+        "value": "Banco de Bogot\u00e1",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9934420585632324,
+        "value": "Bogot\u00e1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "No puedo, pero mi c\u00e9dula es 1904432876",
+    "entities": [
+      {
+        "start": 28,
+        "end": 38,
+        "value": "1904432876",
+        "entity": "number_id"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pid",
+        "start": 28,
+        "end": 38,
+        "confidence_entity": 0.8254332542419434,
+        "value": "1904432876",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yo tengo un seguro de un veh\u00edculo de placas Dora Mar\u00eda kilo 132",
+    "entities": [
+      {
+        "start": 44,
+        "end": 63,
+        "value": "Dora Mar\u00eda kilo 132",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 60,
+        "end": 63,
+        "confidence_entity": 0.6050602197647095,
+        "value": "132",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "decorada con un agente humano San Mart\u00edn",
+    "entities": [
+      {
+        "start": 30,
+        "end": 40,
+        "value": "San Mart\u00edn",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "regresarme con \u00c1ngel Iv\u00e1n",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.4024924635887146,
+        "value": "Iv\u00e1n",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bueno, espec\u00edficamente la la que me coje el seguro si se llama omaira, Herrera",
+    "entities": [
+      {
+        "start": 63,
+        "end": 78,
+        "value": "omaira, Herrera",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "en tucum\u00e1n",
+    "entities": [
+      {
+        "start": 3,
+        "end": 10,
+        "value": "tucum\u00e1n",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Londres 226",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Londres",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Necesito el n\u00famero de un expediente de una audiencia que tuvo en bello el 2 de diciembre",
+    "entities": [
+      {
+        "start": 65,
+        "end": 70,
+        "value": "bello",
+        "entity": "city"
+      },
+      {
+        "start": 74,
+        "end": 88,
+        "value": "2 de diciembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 74,
+        "end": 88,
+        "confidence_entity": 0.785974383354187,
+        "value": "2 de diciembre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nicole neumann",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Nicole neumann",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ricky Martin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Ricky Martin",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "si una en Tijuana por favor",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "Tijuana",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "soy 3a afectada de un accidente que ocurri\u00f3 el diecinueve de diciembre del 2020",
+    "entities": [
+      {
+        "start": 47,
+        "end": 79,
+        "value": "diecinueve de diciembre del 2020",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 58,
+        "end": 70,
+        "confidence_entity": 0.519460916519165,
+        "value": "de diciembre",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 75,
+        "end": 79,
+        "confidence_entity": 0.6607690453529358,
+        "value": "2020",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Te pase que la necesito urgente para una audiencia de Ahorita a las 3 de la tarde.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 68,
+        "end": 69,
+        "confidence_entity": 0.4247525632381439,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "consulta de proceso de indemnizaci\u00f3n del carro y el 047",
+    "entities": [
+      {
+        "start": 47,
+        "end": 55,
+        "value": "y el 047",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 47,
+        "end": 48,
+        "confidence_entity": 0.682555615901947,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "address",
+        "start": 52,
+        "end": 55,
+        "confidence_entity": 0.34444376826286316,
+        "value": "047",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Es que necesito exponer un caso porque la verdad me siento demasiado atropellado por un intento de robo con sube con mi carro y la verdad llevo 20 d\u00edas y no me han solucionado nada.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 144,
+        "end": 146,
+        "confidence_entity": 0.5226401686668396,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Necesito informaci\u00f3n sobre la radicaci\u00f3n en \u00e9l en la oficina que tienen en la calle 72",
+    "entities": [
+      {
+        "start": 78,
+        "end": 86,
+        "value": "calle 72",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 84,
+        "end": 86,
+        "confidence_entity": 0.5916743874549866,
+        "value": "72",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para mirar c\u00f3mo va mi proceso que el gato se muri\u00f3 y estoy en la espera de una llamada y no han podido llamarme.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.9491587281227112,
+        "value": "gato",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Chevrolet 4444",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Chevrolet 4444",
+        "entity": "model_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pid",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.3469102680683136,
+        "value": "4444",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ian Lucas",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Ian Lucas",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Si necesito comunicarme con una G",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 32,
+        "end": 33,
+        "confidence_entity": 0.7202929258346558,
+        "value": "G",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00ed buenas tardes Elena C\u00f3mo \u00e9sta habla con la administradora del conjunto Residencial Balcones del de lo que pasa es que tengo problemas un apartamento de agua de filtraci\u00f3n de agua y parece que fue el bajarse de \u00e1reas comunes entonces necesito, porfa.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "Elena",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "precio Comun\u00edcame con en tucum\u00e1n",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.7871814966201782,
+        "value": "tucum\u00e1n",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "304 47 4509",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "304 47 4509",
+        "entity": "cel_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "model_car",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.18408046662807465,
+        "value": "304 47 4509",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Me toc\u00f3 de Cali con un agente humano.",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "Cali",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9906497597694397,
+        "value": "Cali",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "16834 9339 que atendemos las 24 horas del d\u00eda los 7 d\u00edas de la semana",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "16834 9339",
+        "entity": "cel_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number_id",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.3365797698497772,
+        "value": "16834 9339",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "deseo contactar con Juliana Reyes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9773567318916321,
+        "value": "Juliana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "diario la calle",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.7755996584892273,
+        "value": "calle",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "estando mal enfermarme el correo electr\u00f3nico de h",
+    "entities": [
+      {
+        "start": 48,
+        "end": 49,
+        "value": "h",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Estoy en Bogot\u00e1 y voy para Madrid con Dinamarca el picure.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "Bogot\u00e1",
+        "entity": "city"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "Madrid",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.686754584312439,
+        "value": "Bogot\u00e1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Maximiliano Sierra",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "Maximiliano Sierra",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Por el 1.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 7,
+        "end": 8,
+        "confidence_entity": 0.7252389192581177,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Por favor, s\u00ed, Por favor con m\u00e1s en tucum\u00e1n.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.5272914171218872,
+        "value": "tucum\u00e1n",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "resulta que le hicieron un robo de los dos espejos tengo una camioneta Qashqai 2019",
+    "entities": [
+      {
+        "start": 71,
+        "end": 83,
+        "value": "Qashqai 2019",
+        "entity": "model_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pid",
+        "start": 71,
+        "end": 78,
+        "confidence_entity": 0.19702363014221191,
+        "value": "Qashqai",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pid",
+        "start": 79,
+        "end": 83,
+        "confidence_entity": 0.5930017828941345,
+        "value": "2019",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si necesita consultar una p\u00f3liza de con humberto ortiz yo soy anto",
+    "entities": [
+      {
+        "start": 40,
+        "end": 54,
+        "value": "humberto ortiz",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tegucigalpa",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Tegucigalpa",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Uruguay",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Uruguay",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "lunes que sacrificado",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7614383101463318,
+        "value": "lunes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hay una fuga en el conjunto en la torre 2 del edificio 202?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 58,
+        "value": "torre 2 del edificio 202",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 55,
+        "end": 58,
+        "confidence_entity": 0.6001061797142029,
+        "value": "202",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "karaoke",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.6007376909255981,
+        "value": "karaoke",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mariana yazbek",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Mariana yazbek",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Necesito informaci\u00f3n de la camioneta mks 122",
+    "entities": [
+      {
+        "start": 37,
+        "end": 44,
+        "value": "mks 122",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.6945288777351379,
+        "value": "122",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "para la calle Necesito la aseguradora de carro",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.8865745663642883,
+        "value": "calle",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para que me explique Los costos del 2021 Y si hay alg\u00fan descuento del 2020 por el coi.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pid",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.3570241332054138,
+        "value": "2021",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "plate_car",
+        "start": 41,
+        "end": 42,
+        "confidence_entity": 0.5834097266197205,
+        "value": "Y",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 66,
+        "end": 69,
+        "confidence_entity": 0.3269067406654358,
+        "value": "del",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pid",
+        "start": 70,
+        "end": 74,
+        "confidence_entity": 0.35375991463661194,
+        "value": "2020",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para que me presten el servicio de traslado de un veh\u00edculo de aguachica aqu\u00ed a Bogot\u00e1 por da\u00f1o el motor.",
+    "entities": [
+      {
+        "start": 62,
+        "end": 71,
+        "value": "aguachica",
+        "entity": "city"
+      },
+      {
+        "start": 79,
+        "end": 85,
+        "value": "Bogot\u00e1",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 79,
+        "end": 85,
+        "confidence_entity": 0.4843219220638275,
+        "value": "Bogot\u00e1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para que puedan enviar los repuestos del veh\u00edculo que desde el 12 de diciembre estado pendiente y no han enviado los repuestos del veh\u00edculo de un cimiento.",
+    "entities": [
+      {
+        "start": 63,
+        "end": 78,
+        "value": "12 de diciembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 63,
+        "end": 78,
+        "confidence_entity": 0.8782099485397339,
+        "value": "12 de diciembre",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 140,
+        "end": 142,
+        "confidence_entity": 0.8580074310302734,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "se pidi\u00f3 una carta del 3 de diciembre y hasta ahora no se ha llegado por parte de RQT",
+    "entities": [
+      {
+        "start": 23,
+        "end": 37,
+        "value": "3 de diciembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 23,
+        "end": 37,
+        "confidence_entity": 0.739978551864624,
+        "value": "3 de diciembre",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 79,
+        "end": 81,
+        "confidence_entity": 0.8255049586296082,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Gracias, No s\u00e9 que anoche quebraron un vidrio en la calle 0000000 quebraron hundi\u00f3 y se robaron el marco de la ventana, lo da\u00f1aron.",
+    "entities": [
+      {
+        "start": 52,
+        "end": 65,
+        "value": "calle 0000000",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 52,
+        "end": 57,
+        "confidence_entity": 0.7405139803886414,
+        "value": "calle",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number_id",
+        "start": 58,
+        "end": 65,
+        "confidence_entity": 0.40535736083984375,
+        "value": "0000000",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "el me gustar\u00eda que hiciera un abogado aqu\u00ed y ahorita para hacer el transbordo para una gr\u00faa para llevarle un taller autorizado Armenia",
+    "entities": [
+      {
+        "start": 127,
+        "end": 134,
+        "value": "Armenia",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "buenos d\u00edas, mira, estoy tratando de cancelar un seguro y no me lo reciben en promedio que le he pagado Pues siempre que es por baloto n\u00famero de c\u00e9dula del 12 12 09 283 a nombre de Francisco",
+    "entities": [
+      {
+        "start": 156,
+        "end": 168,
+        "value": "12 12 09 283",
+        "entity": "number_id"
+      },
+      {
+        "start": 181,
+        "end": 190,
+        "value": "Francisco",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cel_number",
+        "start": 156,
+        "end": 164,
+        "confidence_entity": 0.2302922010421753,
+        "value": "12 12 09",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number_id",
+        "start": 165,
+        "end": 168,
+        "confidence_entity": 0.28229737281799316,
+        "value": "283",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Muy buenos d\u00edas, se\u00f1ora gentileza ayer Pues todo un siniestro estoy aqu\u00ed en la clave Barranquilla llamo Consuelo con el pedido 4444",
+    "entities": [
+      {
+        "start": 85,
+        "end": 97,
+        "value": "Barranquilla",
+        "entity": "city"
+      },
+      {
+        "start": 104,
+        "end": 112,
+        "value": "Consuelo",
+        "entity": "name"
+      },
+      {
+        "start": 127,
+        "end": 131,
+        "value": "4444",
+        "entity": "pid"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "con unas en Tijuana por favor",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.8756977319717407,
+        "value": "Tijuana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si deseo hablar con Tatiana Bustamante",
+    "entities": [
+      {
+        "start": 20,
+        "end": 38,
+        "value": "Tatiana Bustamante",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 28,
+        "end": 38,
+        "confidence_entity": 0.7627878785133362,
+        "value": "Bustamante",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Buenas tardes, Habla con los cacaos Caicedo",
+    "entities": [
+      {
+        "start": 36,
+        "end": 43,
+        "value": "Caicedo",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "correo es 2980 180 arroba hotmail.com",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "cel_number",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.4051021337509155,
+        "value": "180",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Es el banco banco sudameris",
+    "entities": [
+      {
+        "start": 12,
+        "end": 27,
+        "value": "banco sudameris",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bank",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.9529207348823547,
+        "value": "banco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "bank",
+        "start": 12,
+        "end": 27,
+        "confidence_entity": 0.937834620475769,
+        "value": "banco sudameris",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Es para llevar el carro que est\u00e1 por siniestro de anzo\u00e1tegui tolima a ibagu\u00e9 en gr\u00faa.",
+    "entities": [
+      {
+        "start": 50,
+        "end": 60,
+        "value": "anzo\u00e1tegui",
+        "entity": "city"
+      },
+      {
+        "start": 70,
+        "end": 76,
+        "value": "ibagu\u00e9",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Es que necesito saber si el carro est\u00e1 asegurado de placas G de gato j y 882.",
+    "entities": [
+      {
+        "start": 59,
+        "end": 76,
+        "value": "G de gato j y 882",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 69,
+        "end": 70,
+        "confidence_entity": 0.9668726325035095,
+        "value": "j",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "plate_car",
+        "start": 71,
+        "end": 76,
+        "confidence_entity": 0.8301246762275696,
+        "value": "y 882",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Joel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Joel",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Jorge",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Jorge",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Mauricio de Jes\u00fas Betancourt \u00c1lvarez",
+    "entities": [
+      {
+        "start": 0,
+        "end": 36,
+        "value": "Mauricio de Jes\u00fas Betancourt \u00c1lvarez",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.5836016535758972,
+        "value": "\u00c1lvarez",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para que me haga el favor y me digan En qu\u00e9 estado est\u00e1 el proceso 21843.",
+    "entities": [
+      {
+        "start": 67,
+        "end": 72,
+        "value": "21843",
+        "entity": "pid"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 26,
+        "end": 27,
+        "confidence_entity": 0.5318875908851624,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pid",
+        "start": 67,
+        "end": 72,
+        "confidence_entity": 0.8300495147705078,
+        "value": "21843",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Se\u00f1orita, lo que pasa es que tengo una p\u00f3liza con RQT y y necesito saber la fecha de vencimiento Mi nombre es Jorge Iv\u00e1n Cifuentes olaya.",
+    "entities": [
+      {
+        "start": 110,
+        "end": 136,
+        "value": "Jorge Iv\u00e1n Cifuentes olaya",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "S\u00ed ahorita estoy accidente ac\u00e1, 3 o 3 kil\u00f3metros arriba de manizales estoy en la villa, necesito que vengan los de la aseguradora los abogados de la aseguradora.",
+    "entities": [
+      {
+        "start": 59,
+        "end": 68,
+        "value": "manizales",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "S\u00ed s\u00ed, s\u00ed, Carlos inocente.",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "Carlos",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Wilmer norbey canci\u00f3n roomba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Wilmer norbey",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hey buenos d\u00edas fueras tan amable Mi nombre es Marta Hern\u00e1ndez necesito averiguar sobre un caso de RQT",
+    "entities": [
+      {
+        "start": 47,
+        "end": 62,
+        "value": "Marta Hern\u00e1ndez",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Necesito una autorizaci\u00f3n para el arreglo de mi veh\u00edculo que ya las fotos Est\u00e1n en la plataforma de RQT y necesito la autorizaci\u00f3n para el arreglo del panor\u00e1mico de mi veh\u00edculo FM 910",
+    "entities": [
+      {
+        "start": 177,
+        "end": 183,
+        "value": "FM 910",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 180,
+        "end": 183,
+        "confidence_entity": 0.3350968658924103,
+        "value": "910",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para aclarar una p\u00f3liza que tengo con ustedes por intermedio de falabella.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "bank",
+        "start": 64,
+        "end": 73,
+        "confidence_entity": 0.9430808424949646,
+        "value": "falabella",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "para averiguar sobre un veh\u00edculo que est\u00e1 en la ciudad de Barranquilla",
+    "entities": [
+      {
+        "start": 58,
+        "end": 70,
+        "value": "Barranquilla",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "para el abogado para que mire el caso que se puede hacer y todo eso y la y la gr\u00faa para llevar el carro hacia Armenia",
+    "entities": [
+      {
+        "start": 110,
+        "end": 117,
+        "value": "Armenia",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Para que me hable sobre la factura que yo pago 1 al 15 y ahora me llega, que debo pag\u00f3 una hora el 5 de El 5 del mes 1 del 2021.",
+    "entities": [
+      {
+        "start": 107,
+        "end": 127,
+        "value": "5 del mes 1 del 2021",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 107,
+        "end": 108,
+        "confidence_entity": 0.4489688575267792,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pid",
+        "start": 123,
+        "end": 127,
+        "confidence_entity": 0.4662797749042511,
+        "value": "2021",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para que me verifiquen que va el proceso de una solicitud que realice el 8 de diciembre.",
+    "entities": [
+      {
+        "start": 73,
+        "end": 87,
+        "value": "8 de diciembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 41,
+        "end": 43,
+        "confidence_entity": 0.7039575576782227,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 73,
+        "end": 87,
+        "confidence_entity": 0.9118151068687439,
+        "value": "8 de diciembre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para recoger una mula de una empresa que llama cargo fr\u00edo aqu\u00ed en Santa Rosa claro por motos.",
+    "entities": [
+      {
+        "start": 66,
+        "end": 76,
+        "value": "Santa Rosa",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "para reportar un accidente en la camioneta Renault esta ma\u00f1ana",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "model_car",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.702623188495636,
+        "value": "Renault",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para traer el carro de filandia, ac\u00e1 la casa porque yo soy adulta mayor.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "filandia",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Porque el d\u00eda mi\u00e9rcoles en la noche Se me la tarde me se me varo el carro en San Gil y no tuve a quien acudir hasta que llegue esta ma\u00f1ana hay que mi plan para que me dieran informaci\u00f3n, a d\u00f3nde me puedo comunicar.",
+    "entities": [
+      {
+        "start": 77,
+        "end": 84,
+        "value": "San Gil",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "San Gerardo \u00e9lite",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.5675877928733826,
+        "value": "San",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hola Buenas C\u00f3mo est\u00e1 Muchas gracias mi nombre es L y quer\u00eda saber sobre la indemnizaci\u00f3n de mi veh\u00edculo de placas de xxx222",
+    "entities": [
+      {
+        "start": 50,
+        "end": 51,
+        "value": "L",
+        "entity": "name"
+      },
+      {
+        "start": 118,
+        "end": 124,
+        "value": "xxx222",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 52,
+        "end": 53,
+        "confidence_entity": 0.3768948018550873,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "se\u00f1orita, c\u00f3mo le cuento a Londres",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.975684642791748,
+        "value": "Londres",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tengo factura de falabella y RQT y para pagar el seguro de mi auto",
+    "entities": [
+      {
+        "start": 17,
+        "end": 26,
+        "value": "falabella",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "mazda 2010",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "mazda 2010",
+        "entity": "model_car"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "nombre Carlos Andr\u00e9s Medina balance",
+    "entities": [
+      {
+        "start": 7,
+        "end": 35,
+        "value": "Carlos Andr\u00e9s Medina balance",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.5009908676147461,
+        "value": "Carlos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "1 Juan",
+    "entities": [
+      {
+        "start": 2,
+        "end": 6,
+        "value": "Juan",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "el modelo 2013",
+    "entities": [
+      {
+        "start": 3,
+        "end": 14,
+        "value": "modelo 2013",
+        "entity": "model_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "model_car",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.8435335755348206,
+        "value": "modelo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "El seguro del carro se me venci\u00f3 en agosto y yo quisiera saber que autom\u00e1ticamente.",
+    "entities": [
+      {
+        "start": 36,
+        "end": 42,
+        "value": "agosto",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hazme un favor Para verificar si la moto H",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 41,
+        "end": 42,
+        "confidence_entity": 0.9251470565795898,
+        "value": "H",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Karen semana",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Karen",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Miguel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Miguel",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "No, es que necesito que me vuelvan a gestionar la factura de que el banco no la Lee yo tengo la factura, s\u00e9 que puedo pagar en bancolombia, davivienda giro tanto a bancolombia c\u00f3moda vivienda y la factura que me dieron no no reconoce el n\u00famero.",
+    "entities": [
+      {
+        "start": 127,
+        "end": 138,
+        "value": "bancolombia",
+        "entity": "bank"
+      },
+      {
+        "start": 140,
+        "end": 150,
+        "value": "davivienda",
+        "entity": "bank"
+      },
+      {
+        "start": 164,
+        "end": 175,
+        "value": "bancolombia",
+        "entity": "bank"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "No, se\u00f1ora, h\u00e1game el favor Pablo esperas para saber si me pueden pagar la moto Necesito hablar con un asesor mano.",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "Pablo",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Oye Siri pero necesito para la carrera 94b n\u00famero 566 a50",
+    "entities": [
+      {
+        "start": 31,
+        "end": 57,
+        "value": "carrera 94b n\u00famero 566 a50",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Para que me haga el favor y me diga En qu\u00e9 estado el proceso 21843.",
+    "entities": [
+      {
+        "start": 61,
+        "end": 66,
+        "value": "21843",
+        "entity": "pid"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 26,
+        "end": 27,
+        "confidence_entity": 0.892365038394928,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pid",
+        "start": 61,
+        "end": 66,
+        "confidence_entity": 0.8026575446128845,
+        "value": "21843",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Peugeot envi\u00e9 Ya 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "plate_car",
+        "start": 17,
+        "end": 18,
+        "confidence_entity": 0.49508988857269287,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Valentina",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Valentina",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hola Pepe c\u00f3mo lo hago",
+    "entities": [
+      {
+        "start": 5,
+        "end": 9,
+        "value": "Pepe",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "in Texas",
+    "entities": [
+      {
+        "start": 3,
+        "end": 8,
+        "value": "Texas",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "asesor\u00eda en los seguros de H",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 27,
+        "end": 28,
+        "confidence_entity": 0.8530412316322327,
+        "value": "H",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "el estado de la certificaci\u00f3n de no reclamaci\u00f3n que realice el 15 de diciembre de este a\u00f1o",
+    "entities": [
+      {
+        "start": 63,
+        "end": 78,
+        "value": "15 de diciembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 63,
+        "end": 81,
+        "confidence_entity": 0.7164703607559204,
+        "value": "15 de diciembre de",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Es para pedir devoluci\u00f3n del dinero de octubre cartelera.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.8629493117332458,
+        "value": "octubre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Lo que pasa es que de seguro con fincomercio hace 14 meses y me accident\u00e9 el 10 de noviembre, me quebr\u00e9 el dorso del pie izquierdo, Yo quiero saber si el seguro me cubre o no y la incapacidad.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 44,
+        "value": "fincomercio",
+        "entity": "bank"
+      },
+      {
+        "start": 77,
+        "end": 92,
+        "value": "10 de noviembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 50,
+        "end": 52,
+        "confidence_entity": 0.5499176979064941,
+        "value": "14",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 77,
+        "end": 92,
+        "confidence_entity": 0.6397784948348999,
+        "value": "10 de noviembre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Necesito saber si el carro picanto de plata gj 882 encuentra asegurado",
+    "entities": [
+      {
+        "start": 44,
+        "end": 50,
+        "value": "gj 882",
+        "entity": "plate_car"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 44,
+        "end": 46,
+        "confidence_entity": 0.294982373714447,
+        "value": "gj",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para lo siguiente aqu\u00ed a mi correo me est\u00e1 llegando una serie de mensajes de una de un se\u00f1or Salamanca de unos carros que yo no tengo ni idea, qu\u00e9 ser\u00e1 eso me conozco y es de duitama.",
+    "entities": [
+      {
+        "start": 93,
+        "end": 102,
+        "value": "Salamanca",
+        "entity": "name"
+      },
+      {
+        "start": 175,
+        "end": 182,
+        "value": "duitama",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "para resolver un problema que tengo de un siniestro de h 1 a\u00f1o",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 55,
+        "end": 56,
+        "confidence_entity": 0.7268912196159363,
+        "value": "h",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para un siniestro de el carro que est\u00e1 asegurado 04100.",
+    "entities": [
+      {
+        "start": 49,
+        "end": 54,
+        "value": "04100",
+        "entity": "pid"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number_id",
+        "start": 49,
+        "end": 54,
+        "confidence_entity": 0.4907306730747223,
+        "value": "04100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Para una inquietud que tengo de una p\u00f3liza de un seguro Ac\u00e1 est\u00e1 regalando la ciudad de manizales.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 88,
+        "end": 97,
+        "confidence_entity": 0.9907344579696655,
+        "value": "manizales",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "proceso indemnizaci\u00f3n por Swat",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 26,
+        "end": 30,
+        "confidence_entity": 0.5329500436782837,
+        "value": "Swat",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

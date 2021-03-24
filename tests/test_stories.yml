@@ -1,0 +1,351 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+
+- story: Cancelar conductor elegido | Sin agente humano | Corregido
+  steps:
+  - user: |
+      [cancelar]{"entity": "faq"} [conductor elegido]{"entity": "service"}
+    intent: 3_TRANSFER_AUX
+  - action: utter_CANCELAR_CONDUCTOR_ELEGIDO
+  - user: |
+      Sí, gracias
+    intent: 3_CONFIRMATION_YES
+  - action: utter_4_CONFIRMATION_YES
+  - user: |
+      No, sería todo
+    intent: 6_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Cancelar conductor elegido | Con agente humano | Corregido
+  steps:
+  - user: |
+      [cancelar]{"entity": "faq"} [conductor elegido]{"entity": "service"}
+    intent: 3_TRANSFER_AUX
+  - action: utter_CANCELAR_CONDUCTOR_ELEGIDO
+  - user: |
+      Aceite humano
+    intent: 2_AGENTE_HUMANO
+  - action: utter_3_CALLTRANSFER
+
+- story: Traspasar una póliza ** Revisar luego
+  steps:
+  - user: |
+      Vendí mi carro y Necesito [traspasar]{"entity": "faq"} la póliza.
+    intent: 2_FAQ_B
+  - action: utter_3_CALLTRANSFER
+
+- story: Conductor elegido | Resolvió | FUNCIONA
+  steps:
+  - user: |
+      Cómo solicito un [conductor elegido]{"entity": "service"}?
+    intent: 3_FAQ_A
+  - action: utter_CONDUCTOR_ELEGIDO
+  - user: |
+      Sí, muchas gracias
+    intent: 3_CONFIRMATION_YES
+  - action: utter_4_CONFIRMATION_YES
+  - user: |
+      Ninguna, gracias
+    intent: 2_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Conductor elegido | No resolvió | FUNCIONA
+  steps:
+  - user: |
+      Cómo solicito un [conductor elegido]{"entity": "service"}?
+    intent: 3_FAQ_A
+  - action: utter_CONDUCTOR_ELEGIDO
+  - user: |
+      Aceite rumano
+    intent: 2_AGENTE_HUMANO
+  - action: utter_3_CALLTRANSFER
+
+- story: Certificaciones
+  steps:
+  - user: |
+      certificado de pago
+    intent: 2_CERTIFICATIONS
+  - action: utter_2_CERTIFICATIONS
+  - user: |
+      [Julián David Álvarez]{"entity": "name"}
+    intent: 3_FAQ_A
+  - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+  - user: |
+      No, así está bien
+    intent: 6_CONFIRMATION_NO
+  - action: utter_6_CONFIRMATION_NO
+
+- story: Cancelación Poliza **
+  steps:
+  - user: |
+      Quisiera [cancelar]{"entity": "faq"} mi póliza
+    intent: 2_CANCELACIONPOLIZA_TRANSFER
+  - action: utter_2_CANCELACIONPOLIZA_TRANSFER
+
+#! Comentada por conflicto con otras dos historias - NO FUE IDEA DE JULIÁN
+# - story: Vigencia de la póliza | Resolvió duda | Corregido
+#   steps:
+#   - user: |
+#       validación de [vigencia]{"entity": "faq"} de póliza
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_COPIA_POLIZA
+#   - user: |
+#       Sí, muchas gracias
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_2_CONFIRMATION_NO
+
+# - story: Vigencia de la póliza | No resolvió duda - 2_AGENTE_HUMANO | Corregido
+#   steps:
+#   - user: |
+#       Para conocer la [vigencia]{"entity": "faq"} de mi póliza
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_COPIA_POLIZA
+#   - user: |
+#       Acceso rumano
+#     intent: 2_AGENTE_HUMANO
+#   - action: utter_3_CALLTRANSFER
+
+
+# - story: Vigencia de la póliza | No resolvió duda - 3_CONFIRMATION_NO | Corregido
+#   steps:
+#   - user: |
+#       Para conocer la [vigencia]{"entity": "faq"} de mi póliza
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_COPIA_POLIZA
+#   - user: |
+#       No, agente humano
+#     intent: 3_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER
+
+#! Se comentó este test y la historia porque las entidades de nombres no generan suficiente confianza
+# - story: Reportar siniestro | Sin agente humano | Corregido
+#   steps:
+#   - user: |
+#       Es para [reportar]{"entity": "faq"} el daño a un vehículo.
+#     intent: 3_FAQ_A
+#   - action: utter_2_SINIESTROS
+#   - user: |
+#       Sí, soy yo
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_5_GET_REPORTINGTYPE
+#   - user: |
+#       [Julián David Álvarez]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_6_GET_THIRDPARTYNAME_ANY
+#   - user: |
+#       [3025469783]{"entity": "cel_number"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       No, hasta ahí
+#     intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Reportar siniestro | Con agente humano | Corregido
+#   steps:
+#   - user: |
+#       Para [reportar]{"entity": "faq"} un accidente
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_2_SINIESTROS
+#   - user: |
+#       Sí, soy yo
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_5_GET_REPORTINGTYPE
+#   - user: |
+#       [Julián Peña Villa]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_6_GET_THIRDPARTYNAME_ANY
+#   - user: |
+#       [3025469783]{"entity": "cel_number"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       accesorio mano
+#     intent: 2_AGENTE_HUMANO
+#   - action: utter_2_AGENTE_HUMANO
+#   - user: |
+#       Accidente
+#     intent: 2_FAQ_B
+#   - action: utter_2_SINIESTRO_TRANSFER
+
+#! Comentado porque nos quedó grande hacer la predicción correcta    
+# - story: Reportar robo | Corregida
+#   steps:
+#   - user: |
+#       Me [robaron]{"entity": "faq"} las llantas
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_2_SINIESTROS
+
+#! Comentado porque nos quedó grande hacer la predicción correcta
+# - story: Reportar robo | Corregida
+#   steps:
+#   - user: |
+#       Hubo un caso de [robo]{"entity": "faq"}
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_2_SINIESTROS
+
+# - story: Pago de seguro | Resolvió | Corregido
+#   steps:
+#   - user: |
+#       Sobre cómo hacer el [pago]{"entity": "faq"} de mi seguro
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_MEDIOS_DE_PAGO
+#   - user: |
+#       Así no más
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_4_CONFIRMATION_YES
+#   - user: |
+#       No, ninguna
+#     intent: 2_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Pago de seguro | No resolvió | Corregido
+#   steps:
+#   - user: |
+#       Sobre cómo hacer el [pago]{"entity": "faq"} de mi seguro
+#     intent: 2_FAQ_B
+#   - action: utter_MEDIOS_DE_PAGO
+#   - user: |
+#       No
+#     intent: 2_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER
+
+# - story: Renovación Poliza | Todo sale bien, y no quiere agente humano | 2_QUOTES | Corregida
+#   steps:
+#   - user: |
+#       [Renovación]{"entity": "faq"} de póliza
+#     intent: 2_QUOTES
+#   - action: utter_2_QUOTES
+#   - user: |
+#       Carro
+#     intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - user: |
+#       [Santiago Álvarez]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       No
+#     intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Renovación Poliza | Todo sale bien, y no quiere agente humano | 3_TRANSFER_AUX | Corregida
+#   steps:
+#   - user: |
+#       Para [renovar]{"entity": "faq"} la póliza de seguro
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_2_QUOTES
+#   - user: |
+#       Carro
+#     intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - user: |
+#       [Santiago Álvarez]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       No
+#     intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Renovación Poliza | Quiere agente humano | 2_QUOTES | Corregida
+#   steps:
+#   - user: |
+#       [Renovar]{"entity": "faq"} de póliza
+#     intent: 2_QUOTES
+#   - action: utter_2_QUOTES
+#   - user: |
+#       Coche
+#     intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - user: |
+#       [Oscar De Peña]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       Quiero un agente humano
+#     intent: 2_AGENTE_HUMANO
+#   - action: utter_2_AGENTE_HUMANO
+#   - user: |
+#       Renovar póliza
+#     intent: 2_QUOTES
+#   - action: utter_3_CALLTRANSFER
+
+# - story: Renovación Poliza | Quiere agente humano | 3_TRANSFER_AUX | Corregida
+#   steps:
+#   - user: |
+#       Para [renovar]{"entity": "faq"} la póliza de seguro
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_2_QUOTES
+#   - user: |
+#       Coche
+#     intent: 3_GETINFOCAR_QUOTES
+#   - action: utter_3_GETINFOCAR_QUOTES
+#   - user: |
+#       [Oscar De Peña]{"entity": "name"}
+#     intent: 3_FAQ_A
+#   - action: utter_5_CERTIFICATION_CONFIRMATIONYES
+#   - user: |
+#       Quiero un agente humano
+#     intent: 2_AGENTE_HUMANO
+#   - action: utter_2_AGENTE_HUMANO
+#   - user: |
+#       Renovar póliza
+#     intent: 2_QUOTES
+#   - action: utter_3_CALLTRANSFER
+
+# - story: Cotizar póliza | Sin agente humano
+#   steps:
+#   - user: |
+#       Necesito [cotizar]{"entity": "faq"} una póliza todo riesgo
+#     intent: 2_FAQ_B
+#   - action: utter_DILIGENCIAR_FORM
+#   - user: |
+#       Sí, gracias
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_4_CONFIRMATION_YES
+#   - user: |
+#       No, ya nada
+#     intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Cotizar póliza | Con agente humano
+#   steps:
+#   - user: |
+#       Para [cotizar]{"entity": "faq"} una póliza de seguro
+#     intent: 3_TRANSFER_AUX
+#   - action: utter_DILIGENCIAR_FORM
+#   - user: |
+#       No, agente humano
+#     intent: 3_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER
+
+
+# #! Para probar `Cotizar póliza` con 2_QUOTES
+# - story: Cotizar póliza | Sin agente humano
+#   steps:
+#   - user: |
+#       [Cotizar]{"entity": "faq"} póliza
+#     intent: 2_QUOTES
+#   - action: utter_DILIGENCIAR_FORM
+#   - user: |
+#       Sí, gracias
+#     intent: 3_CONFIRMATION_YES
+#   - action: utter_4_CONFIRMATION_YES
+#   - user: |
+#       No, ya nada
+#     intent: 6_CONFIRMATION_NO
+#   - action: utter_6_CONFIRMATION_NO
+
+# - story: Cotizar póliza | Con agente humano
+#   steps:
+#   - user: |
+#       Quiero [cotizar]{"entity": "faq"} la póliza
+#     intent: 2_QUOTES
+#   - action: utter_DILIGENCIAR_FORM
+#   - user: |
+#       No, agente humano
+#     intent: 3_CONFIRMATION_NO
+#   - action: utter_3_CALLTRANSFER

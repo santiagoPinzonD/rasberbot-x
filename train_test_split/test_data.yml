@@ -1,0 +1,1101 @@
+version: "2.0"
+nlu:
+- intent: 3_FAQ_WAIT
+  examples: |
+    - Bueno voy a hacerlo a ver si me va bien.
+- intent: 2_QUOTES_FALLBACK
+  examples: |
+    - motos
+- intent: 3_GETANY_QUOTES
+  examples: |
+    - póliza de transporte
+- intent: 6_GET_THIRDPARTYNAME_ANY
+  examples: |
+    - Mi nombre es [O](name)
+- intent: 3_AGGRIEVED_THIRD_PARTY
+  examples: |
+    - si soy un tercero que tuvo un accidente con la figura [Chávez](name)
+- intent: 3_AGGRIEVED_THIRD_PARTY_FALLBACK
+  examples: |
+    - estamos
+- intent: 3_FAQ_FALLBACK
+  examples: |
+    - no pues que necesiten informaciones que ir por el celular
+- intent: 4_ACCIDENT_FOLLOWUP
+  examples: |
+    - conocer todo el seguimiento de la indemnización
+- intent: 5_CERTIFICATION_CONFIRMATIONYES
+  examples: |
+    - asi es
+- intent: 5_CONFIRMATION_YES
+  examples: |
+    - jessie
+- intent: 2_CANCELACIONPOLIZA_TRANSFER
+  examples: |
+    - Necesito cancelar la póliza.
+- intent: 2_CONFIRMATION_NO
+  examples: |
+    - no señoras
+- intent: 3_GETINFO_CERTIFICATION_FALLBACK
+  examples: |
+    - Outlook
+- intent: 4_CONFIRMATION_NO
+  examples: |
+    - nox
+- intent: 6_CONFIRMATION_NO
+  examples: |
+    - No qué mierda esto pasa jueputa.
+- intent: 1_WELCOME_WAIT
+  examples: |
+    - esperando
+- intent: 2_ASSISTS_TRANSFER
+  examples: |
+    - Si necesito solicitar inspección
+- intent: 2_SINIESTROS
+  examples: |
+    - para un siniestro
+- intent: 5_CERTIFICATION_CONFIRMATIONNO
+  examples: |
+    - incorrecta
+    - esta malo
+- intent: 5_GET_REPORTINGTYPE
+  examples: |
+    - por daño
+    - otoño en mi vehículo
+- intent: 3_GETINFO_QUOTES
+  examples: |
+    - no no le entiendo no le entiendo ala pregunta
+    - Contra todo riesgo.
+- intent: 3_CONFIRMATION_NO
+  examples: |
+    - no, no
+    - no por favor
+- intent: 1_WELCOME_REPEAT
+  examples: |
+    - ADO
+    - Aló?
+    - alo
+- intent: 3_GETINFOCAR_QUOTES
+  examples: |
+    - para vehículo
+    - vehículo
+    - carro
+- intent: 4_CONFIRMATION_YES
+  examples: |
+    - si correcto
+    - Sí señora, yo yo creo que está dentro del casco urbano casco urbano no es final ya nosotros Yo estoy en [Pereira](city) le estoy hablando de [Pereira](city)
+    - claro
+- intent: 2_INFORMACION
+  examples: |
+    - consulta
+    - Necesito una información
+    - Necesito por favor.
+- intent: 3_FAQ_REPEAT
+  examples: |
+    - no la verdad no entiendo bien lo que debo hacer
+    - No porque yo no sé en realidad Cómo mandar eso
+    - Me repite, por favor.
+    - Dólares al día porque no me ha dicho porque el alcohol es la causa que no autorizado.
+- intent: 2_CERTIFICATIONS
+  examples: |
+    - pago de indemnización
+    - ningún otro el certificado
+    - Qué necesito certificado de la póliza.
+    - Necesito una certificación
+- intent: DEFAULT_FALLBACK
+  examples: |
+    - tdcs
+    - GTA
+    - agente monte
+    - secop II
+    - Face
+- intent: 4_CONFIRMATION_YES_REPEAT
+  examples: |
+    - Ya le dije que no era la gente humana.
+    - Bueno me pasan a alguien que me pueda atender.
+    - Gracias, No sé que anoche quebraron un vidrio en la [calle 0000000](address) quebraron hundió y se robaron el marco de la ventana, lo dañaron.
+    - No puedo utilizar mi tarjeta de crédito mi tarjeta de crédito rechazada.
+    - Hola estimado, por favor
+- intent: 2_QUOTES
+  examples: |
+    - renovar póliza
+    - Necesito renovar la póliza de transporte.
+    - Es la póliza la póliza contractual de para la moto.
+    - cotizar un seguro
+    - Necesito cotizar una póliza de auto.
+    - comprar una póliza
+    - renovación póliza
+- intent: 1_HELLO_REPEAT
+  examples: |
+    - Gracias Buenos días.
+    - Sí buenos días
+    - Hola hola hola.
+    - la buena
+    - buenos días
+    - Buenas noches.
+- intent: 5_QUOTES_CONFIRMATIONYES_FALLBACK
+  examples: |
+    - Me enviaste el mensaje a donde un mensaje de texto?
+    - Ay
+    - por favor, una agente humano
+    - automóvil automóvil
+    - soat el soat también
+    - nosotras Estancia personal
+    - Es que necesito que por favor me colabora entrenamiento.
+- intent: 2_SINIESTROS_FALLBACK
+  examples: |
+    - Ver si si el vehículo cuenta con seguro todo riesgo Y usted, qué hace?
+    - tenemos la servicio DHL
+    - Soy inseguro RQTl.
+    - etario
+    - Si yo tengo carro y salvo
+    - twitter0
+    - kahlo
+- intent: 2_SINIESTRO_TRANSFER
+  examples: |
+    - soy asegurado en RQT
+    - tengo una póliza de RQT
+    - Tengo un seguro.
+    - asegurado asegurado con RQT
+    - asegurado de RQT
+    - Tengo el seguro RQT.
+    - no yo soy un asegurado con RQT
+    - asegurado
+- intent: 3_CONFIRMATION_YES
+  examples: |
+    - Sí con acento
+    - Sí claro.
+    - ese también b
+    - afirmativo
+    - imagen Tijuana por favor
+    - curvas en Tijuana por favor
+    - si deseo hablar con [Tatiana Bustamante](name)
+    - correctamente
+    - soy
+    - tengo un problema
+    - Sí, sí.
+    - Izzi
+- intent: 2_FAQ_B
+  examples: |
+    - Muy buenos días, como tú me puede regalar una cosita de un certificado de continuidad de mi vehículo o la copia de la póliza porque realmente no la tengo, gracias.
+    - Necesito una certificación de cancelación de póliza
+    - No lo resolvió Necesito hablar con la gente humano.
+    - Hágame un favor, quisiera conocer el estado de mi póliza.
+    - Muy buenos días, hágame un favor, lo que pasa es que necesito saber sobre el estado de mi vehículo con RQT seguros para ver en qué en qué va lo que la el concesionario le mando el reporte ya entonces están esperando.
+    - Necesito asistencia de me está encendiendo el carro.
+    - Ay Quiero comunicarme con un agente virtual
+    - Quisiera saber si tengo mi carro asegurado con ustedes
+    - Buenos días Necesito la copia de la póliza que tengo con ustedes
+    - confirmar número de póliza
+    - reposición de llave encendido
+    - facturacion facturacion facturacion facturacion facturacion
+    - requerimos hacer una reclamación de gastos exequiales de un usuario un asegurado de RQT
+    - información sobre
+    - Necesito traspasar mi póliza.
+    - Sí muchas gracias Quisiera pedir un favor Yo soy cliente de RQT
+    - información de placa de un vehículo nuevo
+    - indicaciones
+    - asesoría penal
+    - cotizar un seguro de carro
+    - Muy buenos días, señora gentileza ayer Pues todo un siniestro estoy aquí en la clave [Barranquilla](city) llamo [Consuelo](name) con el pedido [4444](pid)
+    - ver Buenos días Lo que pasa es que me robaron los espejos
+    - la gritona un asesor
+    - una conversación un ser humano
+    - Estoy en el proceso de hominización
+    - Buenos días, señorita, Mira es para preguntar cómo radicó unos papeles para el seguro de vida, es que pueden incapacidad del [31 de octubre](date) al [21 de noviembre](date) y me dijeron que me comunicara con este número de
+    - atención al cliente personalizada, por favor
+    - Sale más barato.
+    - Llamar a D
+    - tarjeta buenos días
+    - auxilio de movilización
+    - estado del cimiento
+    - atención presencial
+    - elena me puedes comunicar con un asesor porfavor
+    - comercial por favor
+    - Hola Necesito una carta de no reclamación
+    - el Gracias para reclamar la indemnización de mi vehículo
+    - medidas
+    - Buenos días Necesito que por favor me colaboren Informándome
+- intent: 2_AGENTE_HUMANO
+  examples: |
+    - Necesito comunicarme con la gente humano.
+    - sí por favor una gente
+    - Me Quiero comunicarme con la gente humano.
+    - Me puedes comunicar con un asesor humano?
+    - asesoría
+    - agentes mano
+    - Hola gente humano
+    - Necesito un asesor humanos
+    - Argentina ganó
+    - Necesito hablar con alguien
+    - Necesito hablar con una persona
+    - requiero de un asesor
+    - Con un agente humano, por favor.
+    - gente enana
+    - Necesito una persona
+    - Y prefiero comunicarme con un humano.
+    - Sí sí prefiero comunicarme con un agente humano.
+    - Necesito comunicarme con un asesor humano, gracias.
+    - asesoría con una persona
+    - imagen tu mano
+    - quiero un agente humano
+    - quiero comunicarme con un argentino
+    - comunicarme con un agente humana
+    - una gente humana
+    - agente Man
+    - Yo quiero comunicarme con un humano
+    - con la gente
+    - Necesito un agente humano por favor
+    - Quiero comunicarme con la gente humana
+    - Me gustaría comunicarme con un agente humano.
+    - hablar con asesor mano
+    - si un agente humano
+    - la comunicarme con la gente humano
+    - Necesito hablar con un asesor humana
+    - Necesito comunicarme con el agente humano.
+    - quiero comunicarme con un asesor humano
+    - Gracias Necesito un agente humano por favor
+    - el agente humano
+    - agente Maná
+    - prefiero comunicarme con la gente
+    - quiero comunicarme con la gente
+    - Necesito hablar con una humana
+    - requiero comunicarme con un agente
+    - susana comunicar con la gente mano
+    - Prefiero comunicarme con la gente.
+    - coma gente
+    - si un agente humano por favor
+    - Quiero un agente humano
+    - Si me puedo comunicar con una gente humana sería mejor.
+    - Gracias Necesito un asesor
+    - con la gente humano
+    - Me puede comunicar con la gente humano?
+    - comunicarme con la gente humana
+    - Por favor, me comunica con un asesor humano.
+    - comunicarme con un asesor humano, por favor
+    - accesorios mano
+    - Necesito comunicarme con un agente humano, por favor.
+    - hablar con un representante
+    - Necesito hablar con un asesor humanos
+    - Necesito comunicarme con una persona.
+    - por favor me comunicas con un agente humano
+    - Sí sí, agente, humanos y agente humano
+    - Qué puedo comunicarme con el agente humano?
+    - quiero comunicarme con la gente humanos
+    - antihumano
+    - por favor, me comunica con un asesor humano agente humano
+    - hablar con un humano
+    - Necesito de tu mano
+    - argentina
+    - comunicarme con asesor humanos
+    - cuando una gente humanos
+    - prefiero comunicarme con un agente humana
+    - requiero un agente humano
+    - comunicarme con una gente mala
+    - Podría comunicarme con un asesor humano?
+    - Por favor, me quiero comunicar con un agente humano.
+    - Yo quiero comunicarme con la gente
+    - con un asesor humano porfavor
+    - un asesor humano
+    - la gente humana
+    - comunicarme con una gente, por favor
+    - Prefiero comunicarme con un agente mano.
+    - hablar con asesor humano
+    - Prefiero comunicarme con la gente humana.
+    - comunicarme un agente humano
+    - hablar con asesor humana
+    - Necesito hablar con agente humano
+    - Quiero hablar con un asesor humano
+    - mano
+- intent: 3_FAQ_A
+  examples: |
+    - Sí con un servicio al cliente
+    - adjetivos
+    - it
+    - six
+    - Hazme un favor Para verificar si la moto H
+    - un tercero que tenía un siniestro
+    - necesito cotizar el seguro para una camioneta Frontier
+    - Nicky
+    - Calderón
+    - para hacer una solicitud de reemplazo de vehículos
+    - Y cuál era? No no?
+    - copa
+    - Qué maricada hombres se me acabaron de chocar por detrás?
+    - luces para para ver cuál es lo que hay que hacer
+    - no no no yo no fui
+    - Allende
+    - Auxilio funerario
+    - No, no daré survio.
+    - si lo haces
+    - asentí guano
+    - radio por allá por allá
+    - Quiero lastimar
+    - Comunícame con Ángel kimonos
+    - Señorita, lo que pasa es que tengo una póliza con RQT y y necesito saber la fecha de vencimiento Mi nombre es [Jorge Iván Cifuentes olaya](name).
+    - Que no mire.
+    - El seguro del carro se me venció en [agosto](date) y yo quisiera saber que automáticamente.
+    - Dónde?
+    - Si necesito comunicarme con alguien que me escuche.
+    - Cómo como 3 y algo?
+    - es
+    - No por ahora no
+    - mammana
+    - cinetux
+    - diario la calle
+    - esta información
+    - sí sí me deja comunicación
+    - Porque sí porque me vendieron un servicio en el cual, yo compré y ahora lo estoy solicitando y no no lo están dando me cambiaron todos los parámetros ahora mismo entonces necesito hablar un asesor porque hicieron eso.
+    - No es por favor una venta humana
+    - hoy prefiero No gracias
+    - póliza para hombre y culo
+    - Sears
+    - lotería mejor para explicar
+    - ypf
+    - mami Necesito un servicio de grúa
+    - Estoy averiguando Cómo va uno está un trámite de una incapacidad.
+    - Necesito información sobre una indemnización por muerte
+    - Quisiera saber cómo puedo adquirir la póliza
+    - para sacar una cita
+    - zona íntima
+    - seguro de auto Necesito un asesor humano
+    - grande que el otro coche
+    - No es que no he pagado mi póliza.
+    - Atiendan a ver cómo sigue cómo va el proceso?
+    - el Quiero hablar con un agente humano
+    - segundo
+    - radicando siniestro
+    - estado de cartera
+    - Me puedes me puedes comunicar con un agente humano?
+    - Vengo ya venís para arriba el carro en un cuerpo.
+    - La aseguradora me puedes prestar un carro porque el mío me encuentre taller.
+    - sinceramente tú
+    - Cómo sería la reposición de vehículo, por favor me informa.
+    - No encuentro seguro para moto.
+    - respuesta de petición
+    - bueno yo hablo con él para que vehículo
+    - No necesito el vehículo derramado por pérdida parcial.
+    - 24 horas del día los 7 días de la semana
+    - Al otro carro que me afectó la póliza.
+    - crédito para una póliza
+    - problema con pago
+    - No porque no lo pude hacer
+    - Si por favor con una persona que puede hablar.
+    - [Valentina](name)
+    - infiltrado
+    - agenda sumano
+    - Sucede que él me respondió del carro sé que está quebrado.
+    - para abrirlo desde que te dije
+    - No, señora, hágame el favor [Pablo](name) esperas para saber si me pueden pagar la moto Necesito hablar con un asesor mano.
+    - dos
+    - pronación
+    - Prefiero complicarme con una persona.
+    - Paraná
+    - Ay Dios mío, entonces el chicharrón pues
+    - asentí mal
+    - Elsa Pato
+    - también con una persona humana
+    - si una en [Tijuana](city) por favor
+    - único malo
+    - previo comunicarme con un ángel y humano
+    - encimado
+    - depop
+    - Se cayó la llamada necesito retomar mi solicitud.
+    - atención personalizada
+    - no no no es que necesito hablar algo del city
+    - No no he tenido seguro.
+    - porfa
+    - No necesito saber cómo cómo me van a reembolsar el dinero de una cancelación de un seguro.
+    - cartera también
+    - necesito plan del seguro del carro no está mascota del carro
+    - Qué pasó.
+    - Me puedes confirmar una póliza de un vehículo con placa
+    - Eres el conductor.
+    - hogar asistencia hogar
+    - ikebana
+    - He tenido una accidente
+    - ahorita
+    - Para retirarme del seguro.
+    - No señora Necesito una persona que me atienda personalmente.
+    - oye nada
+    - Cómo le digo que necesito
+    - Necesito comunicarme con asesor.
+    - [Tegucigalpa](city)
+    - haitiano
+    - Porque no manches, no manches, no me han debilitado la plata todavía.
+    - hora en Tijuana
+    - una carta que pedir la semana pasada
+    - baladas un poquito para montarlo ahora
+    - literatura sobre mi carro que fue golpeado
+    - chequeo de vehículo antes de viajes
+    - La casita reconocer es el hijo de mi casa.
+    - Necesito saber el defensor del asegurado de RQT
+    - Necesito una asistencia por un choque
+    - 191 hágame el favor
+    - Y me puede pasar un arreglo romanos?
+    - avenida
+    - Quiero que me diga que que necesito para que me solucione un problema de una incapacidad
+    - inocente
+    - la gente de servicio
+    - Me repite la dirección, pues por favor.
+    - Hágame un favor, lo que pasa es que la niñera todavía unos carros.
+    - Necesito un auto nuevo
+    - Quiero a las 1.
+    - Maluma
+    - la reparación a terceros
+    - Bueno gracias
+    - zippo
+    - Nola resolví
+    - estalló, la llanta del vehículo
+    - una semana
+    - consulta siniestro
+    - vientos 4103 No atiende
+    - para reportar un accidente
+    - asistencia médica de seguros generali en [Medellín](city)
+    - Se perdió la llave del vehículo?
+    - Comunícame con una
+    - donación dinero
+    - Sí, alma, lo siguiente a ti comer comunicándome con usted para que me envíen el valor de la cuota que yo pago mensualmente el carro que tengo que ir a ensayar con la financiera.
+    - Cómo solicitó un conductor elegido
+    - No pues alguien que me solucione el problema
+    - culpa
+    - Buenas tardes, Habla con los cacaos [Caicedo](name)
+    - Para saber cómo va el seguimiento del trámite de la incapacidad.
+    - Comunícame con tu marcador
+    - como la gente humana
+    - salarios del ISSSTE
+    - Quitar tu solicitudes a través de nuestro número de WhatsApp [316 834 9339](cel_number) y atenderemos las 24 horas del día los 7 días de la semana.
+    - Donde se solicitan.
+    - cinetop
+    - Ay prima, no
+    - excepto los siguientes
+    - no, no pude resolver la
+    - cita en el menor tiempo posible en RQT y queremos lo mismo que tú
+    - Qué tengo que hacer para retirarme de este seguro que tengo con ustedes vehicular.
+    - masaje sumado
+    - encuesta
+    - no usted no me cuentes ir el costo
+    - clases
+    - No necesito que asistencia personalizada.
+    - Itam, alguna reclamación de automóvil, en qué taller está el vehículo que hace el sodio tiene si está autorizado?
+    - No, señora, no puedo pagar en línea.
+    - Puro dRQT. Ivonne seguro de RQT
+    - cubierta
+    - chips
+    - una estufa no, Gracias
+    - Es el banco [banco sudameris](bank)
+    - No me resolvió la inquietud.
+    - Lo que necesito saber es si está renovada mi póliza y está pagada.
+    - verificación policial
+    - Manu
+    - cine siniestro reporte
+    - ingrato
+    - Necesito una agenda
+    - Necesito hacer
+    - el [modelo 2013](model_car)
+    - sigues con
+    - realización de una seguridad para un vehículo
+    - Pásame las 2.
+    - bueno, específicamente la la que me coje el seguro si se llama [omaira, Herrera](name)
+    - Sí claro, para adquirir el seguiré.
+    - averiguar un tema de siniestro
+    - No quiero quiero que me la relación de talleres que que que ustedes tienen autorizados para llevar el carro directamente allá.
+    - Grecia 500
+    - imágenes de
+- intent: 3_CALLTRANSFER
+  examples: |
+    - un agente humano por fa
+    - necesito comunicarme con un agente max
+    - Bueno con una gente porque es que aquí no entiendo O sea yo hablo y usted no me contesta nada.
+    - ubicarme con detergente mano
+    - y agente
+    - una genio mano
+    - Hola gente o malo, por favor
+    - Haceme una gente o mal, por favor?
+    - quiero comunicarme con agente humano
+    - Sí tuve Quiero comunicarme con un agente humano
+    - Necesito comunicarme con indemnizaciones.
+    - única mano
+    - agente 1
+    - si una gente mal
+    - te deseo comunicarme con la gente y Maná
+    - si unas antimano
+    - Se quedó con mi casa con un agente humano.
+    - Ya le dije que un humano o quiere que cuelgue.
+    - te quiero comunicarme con un agente umán
+    - armé con un agente humano
+    - para comunicarme con agentes humanos
+    - Porfa me comunican con la gente humanos
+    - Colgando en tus manos
+    - ascensor humano
+    - Con un agente humano me bajó yo.
+    - Si por favor, un agente humano, por favor, si es tan amable, gracias.
+    - Siri Comunícame con alguien
+    - Sí con otra gente por favor humano
+    - Todavía no comunicarme con un agente humano.
+    - si por favor que una gente humano
+    - sí pero comunicarme con la gente humana
+    - Ubicarme con aceite.
+    - chikuru la gente, por favor
+    - Deseo comunicarme con una enzima.
+    - chica de la gente mala
+    - Comunícame con la gente humanos
+    - Te prefiero comunicarme con el agente humano, gracias.
+    - las en tu mano
+    - con heladito humano
+    - Ángel
+    - requiero comunicarme con una gente y manos
+    - columna gente por favor
+    - deseo comunicarme con 1 en tu mano
+    - Prefiero con un agente humano.
+    - objetivo mano
+    - si me quiero comunicar con un agente humano
+    - personajes humano
+    - el médico un agente humano
+    - verificar mi con acento humano
+    - ricardo con un asesor
+    - indemnizaciones agente humano
+    - deseo comunicarme con un humano
+    - por favor, agente humano
+    - Ángel plano
+    - Comunícame con imagen tu mano
+    - Me comunicó con un agente humano.
+    - Me comuniqué con la gente humano, gracias.
+    - Prefiero comunicarme con un angelito humano, gracias.
+    - Pedro comunicarme con un agente humano
+    - si deseo comunicarme con una diente humano
+    - Ángel tomarlo
+    - aspentech humano
+    - Hablar con la gente.
+    - agente maga
+    - lili prefiero comunicarme con un agente humanos
+    - Cómo nace en tu mano
+    - respiro comunicarme comunicarme con una gente
+    - Por favor, hacen tus manos.
+    - Gary tú no vas en tu mano
+    - te quiero comunicarme con un agente mano
+    - un agente humano necesito
+    - con un agente +
+    - Mándame una Mándame una gente con una gente.
+    - Necesito solucionar con la gente humano porque no me han solucionado nada del seguro de mi carro.
+    - Pulgarcito la gente, por favor
+    - En qué mano
+    - Si necesito un agente humano por favor un funcionario
+    - Si tu mano, por favor.
+    - Si tan amable Con una gente humana
+    - Sí que me gustaron agente humanos.
+    - Quién es mejor con un agente mano, por favor.
+    - Se puede comunicar con un asesor de cartera, por favor?
+    - origen tu mano, por favor
+    - con una gente mano, por favor
+    - Prefiero comunicarme con agente humano.
+    - si prefiero comunicarme con un agente humanas
+    - Me puedes comunicar con un agente humano?
+    - comunicarme con don ángel piumato
+    - Valente Man
+    - se una gente mala por favor
+    - requiero comunicarme con agente humano
+    - Sí, necesito como agente humano.
+    - deseo comunicarme con un agente humano Sin dar más vueltas
+    - uñas de humano
+    - una de tu mano, por favor
+    - agente o varón
+    - Te quiero comunicarme con el agente.
+    - humano por favor
+    - primero comunicarnos con un agente humano, por favor
+    - Pero Quiero comunicarme con un agente humano.
+    - agradecería con agente humano
+    - Sí con un asesor mito comunicarme
+    - una junta humano por favor
+    - Por favor, comunícame con una gente.
+    - Bueno les comunica con acento humano
+    - por favor comunicarme con un agente humano
+    - Con un agente humano Por favor, muchas gracias.
+    - este humano
+    - primero con un agente humano
+    - Fue un agente humano, por favor.
+    - tira cómica con un agente
+    - ser un agente agente fumar
+    - por favor una gente
+    - La quiero hablar con un agente humano.
+    - con la tesorera con la tesorera aires
+    - Además en tu mano, porfa.
+    - quiero comunicarme con la agencia humano
+    - hola mi comunicas por favor con un asesor humano
+    - quiero comunicarme con alexis
+    - Ya acabé de accidentar con una moto, necesito asesoría, por favor, en el en el punto derecho y accidente.
+    - humano con un agente humano
+    - así tu mano
+    - conjunto humano
+    - brasero comunicarme con la gente humana
+    - Quiero comunicarme con Ari tu mano
+    - con un agente humano probador
+    - Argentina 2
+    - Ariel tu mano
+    - deseo comunicarme con un agente humano
+    - Y no me puedo comunicar con un agente humano.
+    - Por favor, ponga gente humano.
+    - prefiero comunicarme con la gente juan
+    - Comunícame con Ángel tu mano
+    - Sería preferible comunicarme con un agente humano.
+    - alguna gente humana
+    - con los últimos años
+    - agencia humanos
+    - Sería mejor comunicarme con un agente humano.
+    - Sí, comunica Comunícame con un agente humano, por favor.
+    - llegado comunicarme con un agente humano
+    - señorita Necesito hablar con un agente humano
+    - quería comunicarme con la gente humana
+    - Quiero comunicarme con un humano
+    - conagen tu mano
+    - si por favor 1 agente humano
+    - Zona Gente humano
+    - Por favor, comunica camión con la gente humana.
+    - refiero con un agente
+    - comunicar con un agente humano
+    - un ángel tu mano un agente humano
+    - Si por favor con la gente humana.
+    - regresa con la gente Bueno gracias
+    - si deseo comunicarme con un agente humano
+    - Con quien habló Perdón es que necesito un asesor Tuve un accidente en el carro que tengo afiliado a esa empresa y necesito que venga un asesor acá donde estoy.
+    - me comunicas con un agente humano por favor
+    - Pon un agente humano
+    - un agente Vial
+    - Sí, argentino manos.
+    - perjudicarme con agente humano
+    - oración agente personal humano
+    - con un Altima
+    - si correcto la gente humano
+    - Y es mejor con una sentí humano, porfa.
+    - con un ángel Tijuana
+    - pura gente humanos
+    - deseo que un asesor de hacienda
+    - prefería comunicarme con la gente humano
+    - sí con la gente buena por favor
+    - Con la gente humana prefiero comunicarme con una gente humana, pero Quiero comunicarme con la gente humana.
+    - mi atienda un agente humano
+    - requiero comunicarme con un asesor humanos
+    - Quiero comunicarme con alguien humano
+    - goku mecánico un asesor
+    - señorita yo deseo comunicarme con agente humano para saber sobre mi seguro que tengo con ustedes, Gracias
+    - carmen por favor con un consultor
+    - cuento de comunicar comunicarme con una gente, por favor
+    - Agente humano sí.
+    - comunicarme con un entorno
+    - Qué quiere comunicarse con un agente humano?
+    - un humano por favor
+    - Quiero hablar con un agente Omar
+    - ornamento humano por favor
+    - Quisiera comunicarme con un agente humano.
+    - urgente humano
+    - konaki manos por favor
+    - comunicar con una gente más
+    - Un agente humano gracias.
+    - feriado comunicarme con un humano
+    - una imagen de humano
+    - la gente Maldonado
+    - Obvio Sí pero yo comunicarme con la gente humano.
+    - Prefiero la gente humana.
+    - Quiero comunicarme con el estómago
+    - Quisiera hablar con un agente manos.
+    - Te quiero comunicarme con makiman.
+    - Prefiero comunicarme con un asesor.
+    - agente Max
+    - Sí, comunicarme con agente humano.
+    - si prefiero comunicarme con una gente humana, por favor, Gracias
+    - con una hoja en tu mano
+    - imagen de humano gracias
+    - bueno con una gente humana porfavor
+    - coronas en tus manos me hace el favor
+    - vestido comunicarme con la gente humana
+    - Quería comunicarme con la gente humano
+    - Ariel de humano
+    - Y por favor, la gente mal.
+    - Quiero comunicarme con un agente mano
+    - Si mejor con un asesor.
+    - chico la gente humano
+    - Quiero comunicarme con una gente humana
+    - sise quiero comunicarme con un humano
+    - agente comal
+    - para comunicarme con una semana
+    - conocer a comunicar con un agente
+    - es posible comunicarme con un agente humano
+    - Sí pero Quiero comunicarme con un agente humano
+    - Comunícame con la gente, por favor
+    - necesito comunicarme con un agente umán
+    - quiero comunicarme con una persona
+    - con Diana
+    - Bueno un agente humano
+    - Si por favor, un agente humano, gracias.
+    - Por favor Deseo comunicarme con un agente mano, gracias.
+    - sí señora prefiero comunicarme con un agente mac
+    - si coma en tu mano
+    - por favor soy un agente de financiar gmail
+    - agente humano por favor agente humano
+    - Si prefiero comunicarme con la gente humano.
+    - empleo quiero comunicar con una gente humana
+    - sí pero quiero comunicarme con la gente humana
+    - con otra gente más porfa, Gracias
+    - si comunicarme con un asesor humano porfavor
+    - Y Sí sería bueno por un agente humano, por favor.
+    - Si por favor una gente que que que me pueda colaborar.
+    - con un ambiente humano
+    - libro comunicarme con una gente humana
+    - Hola gente, mami
+    - deseo comunicarme con una
+    - una gente más, por favor
+    - Sí cuando la gente humana
+    - un agente hermanos
+    - A un favor Para comunicarme con un asesor de hs burós.
+- intent: 3_TRANSFER_AUX
+  examples: |
+    - para hacer un reclamo de tránsito
+    - Es una asesoría.
+    - deseo conocer el correo electrónico de la empresa
+    - para acceder a la policía de RQT
+    - Para que me aclare unos datos de una póliza.
+    - para un formulario que necesita
+    - número de póliza
+    - orientación médica veterinaria telefónica
+    - para una asesoría
+    - para renovar el seguro del auto este año
+    - información de un siniestro
+    - para saber si sería de la colita
+    - para decirle un correo electrónico
+    - Contract un seguro de RQT
+    - me comunica con un agente humano por favor
+    - para una reclamación de un seguro
+    - para solicitar un cambio de llave de un automóvil
+    - Mire, necesito solicitar una factura de pago de una cuota de un seguro de vehículo.
+    - vigencia de seguro
+    - para averiguar el tema de una revisión de un vehículo
+    - para confirmación de radicación de papelerías
+    - asesoría general
+    - para pedir un número telefónico
+    - Necesito averiguame un algunos corr
+    - paraque me asesoren una reclamación que estoy haciendo
+    - para un servicio de empleada
+    - Necesito una para una reclamación
+    - para saber el estado de
+    - Actualizar pago de póliza.
+    - para averiguar sobre estado del vehículo
+    - Necesito un trámite sobre un documento de una de un siniestro
+    - para asegurar el carro
+    - para solicitar un servicio de cerrajería para el hogar
+    - para reportar un accidente en la camioneta Renault esta mañana
+    - canción
+    - para felicitar al igual el trámite de una indemnización
+    - Para que me entienda.
+    - Necesito información sobre la reparación de mi camioneta Quiero saber acerca del proceso en el que va
+    - Es para que me desvelas inquietudes que usted no me ha podido responder.
+    - Vacaciones y ya cargue el pago que hice el día de ayer para la póliza.
+    - trayectos
+    - lo de la póliza del vehículo
+    - No me solucionaron, me pregunta.
+    - Necesito realizar el trámite para recuperar el deducible que me tocó pagar.
+    - para aclararnos tema de facturación
+    - Para hacerle una pregunta.
+    - Para traer el carro de [filandia](city), acá la casa porque yo soy adulta mayor.
+    - sancionar
+    - Es que necesito exponer un caso porque la verdad me siento demasiado atropellado por un intento de robo con sube con mi carro y la verdad llevo 20 días y no me han solucionado nada.
+    - para hacer una reclamación de un accidente
+    - Lo que pasa es que tuve un accidente ella me estrellaron el carro entonces te necesito la asesoría, no sé si me llega un abogado acá o qué sería el proceso para un aseguradora.
+    - para averiguar sobre una consignación de un pago de un incidente
+    - Porque no me han dado la respuesta a una solicitud que hice un auxilio de un seguro de vida.
+    - autorización
+    - Para para que me cotice una póliza todo riesgo.
+    - Si eso
+    - asesoría por accidente de tránsito
+    - para un seguro de un vehículo de un automóvil
+    - partir en un seguro de vida
+    - Porque el día miércoles en la noche Se me la tarde me se me varo el carro en [San Gil](city) y no tuve a quien acudir hasta que llegue esta mañana hay que mi plan para que me dieran información, a dónde me puedo comunicar.
+    - renovar seguro todo riesgo
+    - secreto para que me asesores sobre un seguro
+    - información de Phoenix
+    - Para que me emitan, por favor, el estado de cuenta que tengo cita ahora de control y me exigen el estado de cuenta actual del todas.
+    - Para solicitar un seguro todo riesgo.
+    - para preguntar sobre póliza
+    - para una queja
+    - Necesito una guía por favor
+    - solicitud de grúa
+    - para face para empezar un proceso de siniestro porque pues
+    - predicar una información de la empresa Rincón
+    - Apronta le varias cosas de contacto no lo puede solucionar.
+    - vehículo reemplazo
+    - Lo que pasa es que tuve un siniestro en mi carro entonces necesito que me acuerdo para que pronto vengan a recogerme.
+    - para comentar una situación sobre la del vencimiento del seguro que tengo del cardo
+    - información sobre una indemnización
+    - para información sobre una inspección
+    - otra semana mi carro y no me respondió por la
+    - asesor porfavor asesor
+    - Necesito saber dónde puedo pasar los papeles para hacer el cobro de una incapacidad
+    - para hacer una reclamación de un vehículo Hurtado
+    - para solicitar un servicio de sustitución de vehículo
+    - para aclarar un tema de compra de cartera
+    - resolver dudas puntuales
+    - Lo que pasa es que estoy pagando seguro con fincomercio de vida y yo me dañó un pie.
+    - negociar virgen
+    - acerca de la compensación de la devolución de la prima
+    - Para que pasa es que tengo una factura atrasada.
+    - para cambiar el correo electrónico de la facturación electrónica
+    - para verificar un cobro efectuado a mi sueldo
+    - Recibí factura incorrecta.
+    - Papi salgo siniestro
+    - para una asesoría de un servicio de grúa
+    - para solicitarle kit de carretera
+    - para hacer una consulta sobre el siniestro
+    - para averiguar sobre el reembolso de un vencible
+    - Para renovar renovar la póliza de seguro.
+    - descuento de póliza
+    - South
+    - estado de la póliza
+    - Michael información
+    - para para para el servicio de una grúa
+    - Para averiguar sobre un vehículo que están transportando y no me ha llegado al sitio.
+    - Para Cómo es para pedir el favor de que me explique una factura que no autorizadas.
+    - para hacer una reclamación de un seguro de vida por fallecimiento de un afiliado
+    - Para que me des información sobre una factura electrónica de venta.
+    - Para renovar mi póliza de seguro.
+    - para aclaración de una póliza
+    - daño daño de una puerta por un tercero
+    - reclamación de póliza
+    - para que mi un información sobre un deducible
+    - paraque me indique en qué proceso va
+    - Necesito averiguar una vez Cómo está la situación de mi seguro.
+    - asesoría jurídica
+    - para un siniestro un siniestro
+    - para información sobre el daño a terceros
+    - para solicitar un servicio de grúa
+    - polita
+    - Necesito información sobre la radicación en él en la oficina que tienen en la [calle 72](address)
+    - cotización
+    - Cancelar servicio
+    - Aló cartera
+    - para consultar
+    - para un reemplazo de un carro
+    - Para comentar el caso que que no estoy agusto.
+    - hablar personalmente con el agente humano
+    - temas de pago
+    - docum
+    - Porque necesito que me atiendan.
+    - para una inquietud de unas primas
+    - Necesito un seguro de auto yo estoy pagando un seguro de auto en Necesito un seguro por accidente
+    - Necesito hablar sobre la facturación por forma de comunicar con más gente humano.
+    - para verificar una cotización para un seguro de vehículo
+    - Para saber si puedo adquirir un seguro allá.
+    - mail erradicación
+    - Para que me explique las relaciones de que me dieron al Carmen le pegaron al carro y y nada que han respondido en el seguro ni en ninguna parte.
+    - Argentina human
+    - Junior
+    - plomería servicio de plomería
+    - para aclarar un número de factura electrónica y otro para pagos
+    - para verificar sobre el estado de una poliza
+    - El que me digan qué fecha y cuánto hay que pagando yo de seguro voy cuando vence Para volver a renovar el contrato.
+    - Estoy haciendo una reclamación de la devolución de un dinero de chequia.
+    - Es que me chocaron el carro entre Necesito hacer la inspección con el segundo.
+    - consulta sobre servicio de empleada
+    - predicación de simios
+    - Necesito una gente para que me la documentación del caso de colisión que tuve hace un mes
+    - una incompatibilidad
+    - ingreso de vehículo
+    - estado y forma de pago de póliza
+    - Metí una pqr y todavía no me la no me la han contestado.
+    - necesito copiar en hipólito
+    - para averiguar un proceso con RQT
+    - Para la solución del parabrisas trasero la camioneta que lleva hasta allá Desde el año pasado.
+    - Para que me indiques el cubrimiento a mi póliza.
+    - para un daño a terceros
+    - Es que tuve un accidente y requiero el servicio de una bruja.
+    - kit de disección
+    - una inquietud
+    - Para que me presten el servicio de traslado de un vehículo de [aguachica](city) aquí a [Bogotá](city) por daño el motor.
+    - para solicitar una licencia jurídica
+    - Necesito cancelar una cuota del seguro todo riesgo.
+    - informacion sobre una póliza de auto seguro contrato
+    - Qué nos brinda información acerca de una póliza para movilización de ganado bovino.
+    - Necesito asesoría sobre cobro de seguro de vida.
+    - artera
+    - para la calle Necesito la aseguradora de carro
+    - Necesito comunicarme con Movistar me haces el favor.
+    - reclamo de póliza
+    - Necesito un asesor para averiguar un tema sobre un siniestro
+    - Para que me indique si ya fue realizado una consignación de un pago.
+    - para solicitar una devolución de una prima
+    - asesoría sobre reclamación de póliza
+    - para averiguar sobre una autorización de un imprevisto de mi vehículo
+    - sale viajar
+    - Porque tengo una Pérdida total de un carro en tonito, que por favor me solucionen y ya ya un año.
+    - Para que me explique cómo pagar la póliza.
+    - solicitar riesgo póliza reclamación
+    - Necesito conocer la cobertura de mi seguro
+    - Para consultar sobre unas preguntas que usted no me puede responder.
+    - para que me explique sobre
+    - seguros de autos
+    - Brindarme el teléfono de un funcionario.
+    - para abrir una cerradura de puerta
+    - para verificar la póliza exequial gratis
+    - Para saber si mi póliza se encuentra vigente.
+    - Necesito un asesor para averiguar sobre los servicios de mi seguro
+    - para que solucione el problema
+    - Para ver qué pasó con el caso mío de mi vehículo.
+    - canales equio de extintor
+    - Necesito saber si el número de cédula [567890230](number_id) tiene una póliza de autos vigente
+    - Para que me arreglen un servicio.
+    - Para qué son los servicios que se ofrecen?
+    - servicio al cliente de seguro
+    - para unos traspasos de una moto
+    - Necesito visitar que de carretera
+    - el caso de accidente
+    - para cotizar un seguro de bicicletas
+    - Necesito una aclaración sobre un certificado de pago
+    - solicitud de indemnizaciones
+    - solicitud de siniestro
+    - para una consignación
+    - seguro de autos
+    - Para que me dé asesoría que hago en el choque que me acaban de chocar el carro por detrás.
+    - para averiguar
+    - Para actualizar datos que me ayude.
+    - para solucionar un inconveniente que tengo de un seguro de un carro
+    - Porque tengo días tengo dudas de Cómo proceder con un accidente con un niño.
+    - Para revisar mi proceso con el seguro.
+    - solicitar una cita
+    - aclamación de amparo
+    - necesito hablar personalmente con el argentina
+    - para aclarar cosas
+    - parasol para despejar una duda
+    - consulta de beneficios de fincomercio
+    - para confirmar una grúa
+    - para un reclamo acerca de un pago
+    - estado de la reclamación
+    - para aclarar cosas con el
+    - Para recoger una mula de una empresa que llama cargo frío aquí en [Santa Rosa](city) claro por motos.
+    - para preguntar sobre el trámite de 12 repuestos de una de un carro
+    - A que me resuelva dudas?
+    - para información sobre una factura de venta
+    - revisar el estado de cartera de una póliza
+    - tú
+    - tengo un saldo en mora necesito averiguar qué creo
+    - para querer un seguro todo riesgo auto
+    - beneficiaria
+    - para que me brinda información de los costos del seguro de automóvil
+    - Para la cuenta.
+    - Para darle mis datos.
+    - para saber el trámite en el pago de una indemnización
+    - Para que me explique Los costos del 2021 Y si hay algún descuento del 2020 por el coi.
+    - Para averiguar en qué va el arreglo de un siniestro?
+    - trámite sobre vehículo
+    - Aclarar.
+    - para hacer efectivo el servicio seguro de vida
+    - para verificar vigencia del seguro
+    - Para que me dé acompañamiento con el accidente.
+    - para solicitar el kit de viaje seguros
+    - prefiero comunicarme con un agente humanos
+    - para revisar una factura
+    - Para verificar si ya se aprobó.
+    - necesito que me brinden la información sobre un siniestro
+    - Lo que pasa es que me estaban atracando y el carro lo rayaron en la puerta delantera, Dónde va el conductor.
+    - verificar documentos
+    - póliza seguro
+    - Hola que me solucionan conformidad que tengo con ustedes
+    - una póliza de seguro para auto contra todo
+    - para información sobre mi vehículo
+    - Para que me diga Hasta cuánto tiempo tengo yo para reclamar.
+    - Y es que necesito que me dé información sobre una grúa que pedir servicio de grúa.
+    - Mi bebito más en tu mano para coordinar mi vehículo de reemplazo
+    - para retirarme de seguros axa
+    - Para que me ayude con misiles y solicitud.
+    - proveedores
+    - estado de la póliza y pagos de la póliza
+    - Para averiguar por un carro que me van a entregar y no me han dado información.
+    - información general
+    - Para que me entreguen el kit de carretera.
+    - paraque me diga el procedimiento para cobrar una incapacidad
+    - Necesito asesoría.
+    - Para que me aclare una situación que tengo.
+    - para renovar el seguro
+    - llaves del carro
+    - Necesito saber sobre un pago
+    - para solicitar información sobre una nota crédito
+    - Necesito conocer En qué estado está el siniestro que reporte el día [17 de diciembre](date)?
+    - información sobre seguro todo riesgo
+    - pago de financiación de polis
+    - hotel
+    - cita inspección de motocicleta
+    - resonancia magnética
+    - trámites de un recibo
+    - Necesito porque acabo de accidentarme y pagó un seguro y necesito el seguro.
+    - problemas
+    - cotizar un seguro todo riesgo de vehículo
+    - para verificar un estado de cuenta
+    - Tengo el vehículo de placas [y 436](plate_car).
+    - Para mirar en qué qué procedimiento vehículo que tengo en el taller?
+    - para solucionar un inconveniente que tengo con un vehículo
+    - Para que me hable sobre la factura que yo pago 1 al 15 y ahora me llega, que debo pagó una hora el 5 de El [5 del mes 1 del 2021](date).
+    - para ver sobre un siniestro
+    - para solicitar una carta de no reclamación de mi seguro
+    - para realizar una reclamación
+    - consulta consulta
+    - Para preguntarle muchas cosas.
+    - deseo comunicarme con antemano
+    - Necesito averiguar el estado hipólita es como todo ya está activado.
+    - formación
+    - Para quitar dudas sobre una póliza expedida incorrectamente.
+    - seguro de mascotas
+    - para saber los planes de internet y televisión
+    - solicitar equipo de carretera
+    - para que me ayude con un ángel con un certificado de no reclamación
+    - para verificar especificación de la policía icónica de renovación
+    - Necesito una mente humana
+    - Para una deuda que tengo de un seguro y quiero reactivar el seguro.
+    - Para que me recordarás Araceli las preguntas.
+    - Pagó tarjeta de crédito?
+    - Averiguar si policía quiero cancelar.
+    - para una asesoría un agente humano, por favor
+    - para información de seguro
+    - Para ver en qué en qué va el proceso de cancelación de un seguro de un carro que nosotros hicimos la solicitud.
+    - Necesito saber cómo hago el pago de una póliza
+    - información sobre siniestros
+    - para hacer una pregunta acerca del carro del seguro
+    - reclamo de pago de póliza
+    - Para solicitar la póliza.
+    - En el sur del seguro.
+    - Porque es que recibí una póliza de seguro pyme situaciones educativas, que siempre ha salido con con el tomador asegura necesario corporación surgir y salió como la estaba hace 5 años.
+    - Para que me ayude a acomodar Cómo desbloquear a la camioneta, que está bloqueada no quiere prender.
+    - para hacer una solicitud
+    - Para hacer una clase de reclamo seguro que no estuve de acuerdo en no tener.
+    - Para saber si ya llegaron unos locos de un carro.
+    - para consultar la reparación de un vehículo
+    - Necesito saber si ya está autorizado la entrega de un vehículo de Pérdida total al asegurado
+    - autómata
+    - para solucionar un inconveniente que tengo con un vehículo de un seguro del carro
+    - Para generar un recibo de pago de la póliza.
+- regex: address
+  examples: |
+    - [A-Za-zÁÉÍÓÚáéíóúñÑ0-9 ]+
+- regex: bank
+  examples: |
+    - [B-b]anco [A-Za-z]+
+- regex: cel_number
+  examples: |
+    - [0-9 ]{7,12}
+- regex: city
+  examples: |
+    - [A-Za-zÁÉÍÓÚáéíóúñÑ]+
+- regex: date
+  examples: |
+    - [A-Za-zñÑ0-9 ]+
+- regex: model_car
+  examples: |
+    - [A-Za-z]+ [0-9]{4}
+- regex: name
+  examples: |
+    - [A-Za-zÁÉÍÓÚáéíóúñÑ ]+
+- regex: number_id
+  examples: |
+    - [0-9.]{10,15}
+- regex: pid
+  examples: |
+    - \d{5,10}
+- regex: plate_car
+  examples: |
+    - [A-Za-z0-9\-]{6,7}
